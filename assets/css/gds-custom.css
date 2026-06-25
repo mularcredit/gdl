@@ -1359,3 +1359,45 @@ body {
 .feature-area.style-one .single-feature-box h4.feature-title {
   font-weight: 600 !important;
 }
+
+/* ===== Footer — clean icons & tightened links ===== */
+.gds-footer-arrow {
+  font-size: 11px;
+  color: #9b59b6;
+  margin-right: 7px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.footer-widget-menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.footer-widget-menu ul li:hover .gds-footer-arrow {
+  transform: translateX(3px);
+}
+
+.gds-footer-phone {
+  font-size: 13px;
+  color: #9b59b6;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.footer-contact-phone p {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-address span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hide old template decorative shape images in footer */
+.brand-arrow-shape,
+.brand-star-shape,
+.brand-line-shape { display: none !important; }
