@@ -881,7 +881,7 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 .breadcumb-area.two {
   background: radial-gradient(ellipse at 20% 60%, #a8e6c8 0%, #c8f0de 25%, #e4f8f0 55%, #f5fffe 80%, #ffffff 100%) !important;
   overflow: hidden;
-  padding: 120px 0 60px !important;
+  padding: 80px 0 40px !important;
 }
 
 /* Person image on right side — overflow:hidden on parent clips it, no height increase */
