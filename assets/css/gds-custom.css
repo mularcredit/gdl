@@ -1243,3 +1243,29 @@ section.gds-mv-area {
 body {
   background-color: #f4ecfb;
 }
+
+/* ===== Preloader — GDS logo instead of letter spinner ===== */
+.loading-screen {
+  background: #1a0535 !important;
+}
+
+.gds-loader-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: loader-pulse 1.5s ease-in-out infinite;
+}
+
+.gds-loader-logo img {
+  width: 140px;
+  height: auto;
+  border-radius: 0 !important;
+  filter: brightness(10);
+}
+
+@keyframes loader-pulse {
+  0%   { opacity: 1;    transform: scale(1); }
+  50%  { opacity: 0.6;  transform: scale(0.94); }
+  100% { opacity: 1;    transform: scale(1); }
+}
