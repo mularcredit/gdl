@@ -1120,3 +1120,30 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 @media (max-width: 991px) {
   .gds-cta-person { display: none; }
 }
+
+/* ===== Decorative thin circular strokes on white-background sections ===== */
+section.feature-area.style-one,
+.case-study-area.style-one,
+section.gds-instructors-area,
+section.gds-classes-area,
+.testimonial-area.style-one,
+section.gds-faq-area,
+.blog-area.style-one,
+.brand-area.style-one {
+  background-color: #ffffff;
+  background-image:
+    repeating-radial-gradient(
+      circle at 94% 7%,
+      rgba(106, 13, 173, 0.055) 0,
+      rgba(106, 13, 173, 0.055) 1px,
+      transparent 1px,
+      transparent 56px
+    ),
+    repeating-radial-gradient(
+      circle at 6% 93%,
+      rgba(106, 13, 173, 0.038) 0,
+      rgba(106, 13, 173, 0.038) 1px,
+      transparent 1px,
+      transparent 70px
+    ) !important;
+}
