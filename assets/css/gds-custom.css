@@ -18,6 +18,16 @@ img {
   display: block;
   border-radius: 15px;
 }
+
+/* Instructor thumbnail inside course details */
+.instructors-thumb img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  display: block;
+}
 /* Exclude logos, icons, tiny decorative images */
 .header-logo img,
 .mobile-logo img,
