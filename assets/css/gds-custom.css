@@ -1102,20 +1102,20 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   border-radius: 15px !important;
 }
 
-/* ===== CTA banner — small person image ===== */
+/* ===== CTA banner — small person image inside the white card ===== */
 .gds-cta-person {
   position: absolute;
   bottom: 0;
-  right: 180px;
-  height: 140px;
+  right: 0;
+  height: 115%;
   width: auto;
   object-fit: contain;
-  object-position: bottom center;
+  object-position: bottom right;
   mix-blend-mode: multiply;
   border-radius: 0 !important;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
 }
 @media (max-width: 991px) {
   .gds-cta-person { display: none; }
