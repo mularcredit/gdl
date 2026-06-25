@@ -221,19 +221,18 @@ img[src*="logo"] {
   background: #6A0DAD !important;
 }
 
-/* Header CTA button */
-/* ===== Navigation text colour (contrast on light vs dark hero) ===== */
-/* Default (inner pages have LIGHT banner): dark nav text */
+/* ===== Navigation text colour — all states ===== */
+/* Inner pages (light hero): dark text; hover reveals purple ::before block so text → white */
 .header-menu > ul > li > a { color: #1a0b2e !important; }
-.header-menu > ul > li > a:hover { color: #6A0DAD !important; }
+.header-menu > ul > li > a:hover { color: #ffffff !important; }
 
-/* Homepage has a DARK hero -> white nav text over it */
+/* Homepage (dark hero): always white */
 body:has(section.hero_area.style-one) .header-menu > ul > li > a { color: #ffffff !important; }
-body:has(section.hero_area.style-one) .header-menu > ul > li > a:hover { color: #F3E5F5 !important; }
+body:has(section.hero_area.style-one) .header-menu > ul > li > a:hover { color: #ffffff !important; }
 
-/* Sticky header (scrolled) has a dark bar on every page -> white nav text */
+/* Sticky (dark purple bar): white text; hover reveals white ::before block so text → dark */
 .sticky .header-menu > ul > li > a { color: #ffffff !important; }
-.sticky .header-menu > ul > li > a:hover { color: #F3E5F5 !important; }
+.sticky .header-menu > ul > li > a:hover { color: #1a0b2e !important; }
 
 /* Dropdown items sit on a white panel -> keep them dark */
 .sub_menu li a { color: #1a1a1a !important; }
