@@ -41,6 +41,48 @@
   box-shadow: none !important;
 }
 
+/* Missing card types — add transparent border treatment */
+.single-team-box,
+.single-blog-box,
+.testi-review-box,
+.about-item-box {
+  background: transparent !important;
+  border: 1px solid rgba(100, 60, 180, 0.18) !important;
+  border-radius: 15px !important;
+  box-shadow: none !important;
+}
+
+/* Event card thumbs — consistent height */
+.event-thumb img,
+.event-inner-box .event-thumb img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Case study author avatars — small circle */
+.case-autor-img img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Blog author avatars — small circle */
+.blog-author img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 /* Subtle hover lift */
 .course-details-box:hover,
 .event-inner-box:hover,
