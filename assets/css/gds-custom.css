@@ -1307,3 +1307,34 @@ body {
   50%  { opacity: 0.6;  transform: scale(0.94); }
   100% { opacity: 1;    transform: scale(1); }
 }
+
+/* ===== About page — More About button & feature card font sizes ===== */
+.style-one .about-btn a,
+.style-two .about-btn a,
+.style-three .about-btn a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  line-height: 1 !important;
+  font-size: 14px !important;
+  padding: 11px 26px !important;
+}
+
+.style-one .about-btn a i,
+.style-two .about-btn a i,
+.style-three .about-btn a i {
+  position: static !important;
+  font-size: 13px !important;
+}
+
+/* Feature card title and description — smaller */
+.style-two .single-feature-box h4.feature-title,
+.style-two .single-feature-box .feature-title {
+  font-size: 15px !important;
+}
+
+.style-two .single-feature-box p.feature-desc {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
