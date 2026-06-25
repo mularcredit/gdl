@@ -1213,7 +1213,17 @@ section.gds-faq-area::before,
   z-index: -1;
 }
 
+@keyframes trophy-drop {
+  0%   { transform: translateY(-6px); opacity: 0.4; }
+  40%  { transform: translateY(2px);  opacity: 1; }
+  60%  { transform: translateY(-2px); opacity: 1; }
+  80%  { transform: translateY(1px);  opacity: 1; }
+  100% { transform: translateY(0px);  opacity: 1; }
+}
+
 .gds-hero-badge i {
   font-size: 13px;
   color: #ffd700 !important;
+  display: inline-block;
+  animation: trophy-drop 2s ease-in-out infinite;
 }
