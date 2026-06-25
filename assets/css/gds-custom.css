@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap');
+
 /* =====================================================
    GDS Learning Centre - Footer & Edge-Case Styling
    Targeted fixes for elements the purple conversion
    doesn't handle gracefully on dark backgrounds
    ===================================================== */
+
+/* ===== Plus Jakarta Sans for all headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
 
 /* ===== Section & card titles — thin weight ===== */
 .section_title h1,
