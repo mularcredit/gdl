@@ -1101,3 +1101,22 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   object-position: top center;
   border-radius: 15px !important;
 }
+
+/* ===== CTA banner — small person image ===== */
+.gds-cta-person {
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  mix-blend-mode: multiply;
+  border-radius: 0 !important;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+@media (max-width: 991px) {
+  .gds-cta-person { display: none; }
+}
