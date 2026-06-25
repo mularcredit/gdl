@@ -406,6 +406,7 @@ input:focus, textarea:focus, select:focus {
 /* ===== Section padding overrides — tighten gaps between sections ===== */
 section.about-area.style-three.inner { padding: 60px 0 40px !important; }
 section.feature-area.style-two { padding: 50px 0 40px !important; }
+.style-two .single-feature-box { padding: 24px 20px !important; }
 
 /* ===== Mission & Vision (About page) ===== */
 .gds-mv-area { padding: 10px 0 60px; }
