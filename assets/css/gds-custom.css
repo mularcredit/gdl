@@ -528,7 +528,7 @@ body, .header-menu .nav_scroll a, .nav_scroll a {
 .gds-tier { padding: 24px 32px 4px; border-bottom: 1px solid #f3eefa; }
 .gds-tier:last-child { border-bottom: 0; }
 .gds-tier-top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-.gds-tier-top h4 { font-size: 20px; font-weight: 600; color: #1a0b2e; margin: 0; }
+.gds-tier-top h4 { font-size: 20px; font-weight: 600 !important; color: #1a0b2e; margin: 0; }
 .gds-meta { font-size: 13px; font-weight: 500; color: #7c3abf; background: #f4ecfb; padding: 5px 12px; border-radius: 30px; }
 .gds-tier ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
 .gds-tier ul li { position: relative; padding-left: 22px; color: #5a5a6e; line-height: 1.5; font-size: 15px; }
