@@ -4,6 +4,47 @@
    doesn't handle gracefully on dark backgrounds
    ===================================================== */
 
+/* ===== Global card style — transparent with thin border ===== */
+.course-details-box,
+.course-details-content,
+.event-inner-box,
+.joint-event-box,
+.single-feature-box,
+.single-testi-box,
+.testi-box,
+.testi-review-box,
+.about-item-box,
+.about-education-box,
+.about-experience-box,
+.about-learn-box,
+.gds-class-card,
+.gds-mv-card,
+.gds-faq-item,
+.case-study-single-box,
+.educate-hover-box,
+.single-course-offer-box,
+.choose-skill-box,
+.content-box,
+.instructor-ratting-box,
+.event-sidebar,
+.event-info {
+  background: transparent !important;
+  border: 1px solid rgba(100, 60, 180, 0.18) !important;
+  border-radius: 15px !important;
+  box-shadow: none !important;
+}
+
+/* Subtle hover lift */
+.course-details-box:hover,
+.event-inner-box:hover,
+.joint-event-box:hover,
+.single-feature-box:hover,
+.gds-class-card:hover,
+.educate-hover-box:hover {
+  border-color: rgba(100, 60, 180, 0.45) !important;
+  box-shadow: 0 4px 24px rgba(100, 60, 180, 0.08) !important;
+}
+
 /* Global 15px rounded corners on all content images */
 img {
   border-radius: 15px;
