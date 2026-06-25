@@ -880,16 +880,18 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 .breadcumb-area,
 .breadcumb-area.two {
   background: radial-gradient(ellipse at 20% 60%, #a8e6c8 0%, #c8f0de 25%, #e4f8f0 55%, #f5fffe 80%, #ffffff 100%) !important;
+  overflow: hidden;
 }
 
-/* Person image on right side */
+/* Person image on right side — overflow:hidden on parent clips it, no height increase */
 .gds-breadcumb-person {
-  height: 480px;
+  height: 550px;
   width: auto;
   display: block;
   object-fit: contain;
   object-position: bottom center;
   mix-blend-mode: multiply;
+  margin-bottom: -40px;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
 }
