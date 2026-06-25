@@ -876,7 +876,11 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 }
 
 /* ===== Inner page hero / breadcrumb ===== */
-/* Original template background restored — no override */
+/* Replace baked-in people from template PNG with clean CSS gradient */
+.breadcumb-area,
+.breadcumb-area.two {
+  background: radial-gradient(ellipse at 20% 60%, #a8e6c8 0%, #c8f0de 25%, #e4f8f0 55%, #f5fffe 80%, #ffffff 100%) !important;
+}
 
 /* Person image on right side */
 .gds-breadcumb-person {
