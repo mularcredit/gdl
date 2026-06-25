@@ -875,6 +875,13 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   filter: brightness(10) !important;
 }
 
+/* ===== Inner page hero / breadcrumb background ===== */
+.breadcumb-area,
+.breadcumb-area.two {
+  background: linear-gradient(to right, rgba(30,20,60,0.72) 40%, rgba(30,20,60,0.30) 100%),
+              url('../images/gds/hero-inner.png') right center / cover no-repeat !important;
+}
+
 /* Sharon Keter instructor photo — rounded corners */
 .gds-instr-single-photo,
 .gds-instr-single-photo img {
