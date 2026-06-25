@@ -1354,3 +1354,8 @@ body {
   color: #ffffff !important;
   margin-left: 4px;
 }
+
+/* ===== Landing page feature card titles — semibold ===== */
+.feature-area.style-one .single-feature-box h4.feature-title {
+  font-weight: 600 !important;
+}
