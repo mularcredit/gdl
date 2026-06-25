@@ -876,20 +876,31 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 }
 
 /* ===== Inner page hero / breadcrumb ===== */
-/* Replace template background image with brand gradient */
 .breadcumb-area,
 .breadcumb-area.two {
   background: linear-gradient(135deg, #1e1240 0%, #3b1f7a 60%, #6d28d9 100%) !important;
 }
 
+/* Text must be white on dark purple background */
+.breadcumb-title h4 {
+  color: #ffffff !important;
+}
+.breadcumb-content ul li {
+  color: rgba(255,255,255,0.75) !important;
+}
+.breadcumb-content ul li a {
+  color: #ffffff !important;
+}
+
+/* Person image on right side */
 .gds-breadcumb-person {
-  height: 320px;
+  height: 340px;
   width: auto;
-  object-fit: cover;
-  object-position: top center;
   display: block;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  object-fit: contain;
+  object-position: bottom center;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%);
 }
 @media (max-width: 991px) {
   .gds-breadcumb-person { display: none; }
