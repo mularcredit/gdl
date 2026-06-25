@@ -19,14 +19,16 @@ img {
   border-radius: 15px;
 }
 
-/* Instructor thumbnail inside course details */
-.instructors-thumb img {
-  width: 80px;
-  height: 80px;
+/* Instructor thumbnails — small circle avatars */
+.instructors-thumb img,
+.breadcumb-autor img {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   object-position: top center;
   border-radius: 50%;
   display: block;
+  flex-shrink: 0;
 }
 /* Exclude logos, icons, tiny decorative images */
 .header-logo img,
