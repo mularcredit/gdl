@@ -30,7 +30,6 @@
 .single-testi-box,
 .gds-class-card,
 .gds-mv-card,
-.gds-faq-item,
 .case-study-single-box,
 .educate-hover-box,
 .single-course-offer-box,
@@ -913,7 +912,7 @@ section.hero_area.style-one [class*="hero"] { position: relative; z-index: 1; }
 
 /* ===== FAQ Section ===== */
 .gds-faq-area {
-  padding: 90px 0 70px;
+  padding: 60px 0 40px;
   background: #fff;
 }
 
