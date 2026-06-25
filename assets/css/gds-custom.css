@@ -274,7 +274,7 @@ body:has(section.hero_area.style-one) .header-menu > ul > li > a:hover { color: 
 section.hero_area.style-one {
   background: linear-gradient(135deg, #0d0118 0%, #220a3d 45%, #3a0f5e 75%, #160626 100%) !important;
   height: auto !important;
-  padding: 40px 0 60px !important;
+  padding: 20px 0 60px !important;
   position: relative;
   overflow: hidden;
 }
