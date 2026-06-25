@@ -535,7 +535,45 @@ body, .header-menu .nav_scroll a, .nav_scroll a {
 .gds-tier ul li::before {
   content: '\2713'; position: absolute; left: 0; top: 0; color: #7c3abf; font-weight: 700;
 }
-.gds-enroll-row { text-align: center; margin-top: 30px; }
+.gds-enroll-row {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.gds-enroll-row a {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+  background: #6A0DAD !important;
+  color: #ffffff !important;
+  padding: 16px 40px !important;
+  border-radius: 50px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em;
+  border: none !important;
+  box-shadow: 0 8px 28px rgba(106,13,173,0.35) !important;
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  text-decoration: none !important;
+}
+
+.gds-enroll-row a:hover {
+  background: #5B2D8E !important;
+  box-shadow: 0 12px 36px rgba(106,13,173,0.5) !important;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+
+.gds-enroll-row a i {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.gds-enroll-row a:hover i {
+  transform: translateX(4px);
+}
 @media (max-width: 575px){ .gds-tier ul { grid-template-columns: 1fr; } }
 
 /* Override any stray icon image in pricing section subtitle */
