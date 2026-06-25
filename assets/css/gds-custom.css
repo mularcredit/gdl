@@ -22,30 +22,19 @@
   letter-spacing: 0.01em;
 }
 
-/* ===== Global card style — transparent with thin border ===== */
+/* ===== Global card style — transparent with thin border (outer wrappers only) ===== */
 .course-details-box,
-.course-details-content,
 .event-inner-box,
 .joint-event-box,
 .single-feature-box,
 .single-testi-box,
-.testi-box,
-.testi-review-box,
-.about-item-box,
-.about-education-box,
-.about-experience-box,
-.about-learn-box,
 .gds-class-card,
 .gds-mv-card,
 .gds-faq-item,
 .case-study-single-box,
 .educate-hover-box,
 .single-course-offer-box,
-.choose-skill-box,
-.content-box,
-.instructor-ratting-box,
-.event-sidebar,
-.event-info {
+.event-sidebar {
   background: transparent !important;
   border: 1px solid rgba(100, 60, 180, 0.18) !important;
   border-radius: 15px !important;
