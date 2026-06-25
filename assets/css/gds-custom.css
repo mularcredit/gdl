@@ -85,12 +85,24 @@
 /* Subtle hover lift */
 .course-details-box:hover,
 .event-inner-box:hover,
-.joint-event-box:hover,
-.single-feature-box:hover,
-.gds-class-card:hover,
-.educate-hover-box:hover {
+.joint-event-box:hover {
   border-color: rgba(100, 60, 180, 0.45) !important;
   box-shadow: 0 4px 24px rgba(100, 60, 180, 0.08) !important;
+}
+
+/* Remove all hover effects on landing page feature cards */
+.style-one .single-feature-box:hover .educate-hover-box {
+  opacity: 0 !important;
+  transform: scaleX(0) !important;
+}
+.style-one .single-feature-box:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: rgba(100, 60, 180, 0.18) !important;
+}
+.style-one .single-feature-box:hover h4.feature-title,
+.style-one .single-feature-box:hover p.feature-desc {
+  color: inherit !important;
 }
 
 /* Global 15px rounded corners on all content images */
