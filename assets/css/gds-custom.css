@@ -1121,7 +1121,7 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   .gds-cta-person { display: none; }
 }
 
-/* ===== Decorative thin circular strokes on white-background sections ===== */
+/* ===== Decorative faint grid lines fading from centre outwards ===== */
 section.feature-area.style-one,
 .case-study-area.style-one,
 section.gds-instructors-area,
@@ -1130,20 +1130,26 @@ section.gds-classes-area,
 section.gds-faq-area,
 .blog-area.style-one,
 .brand-area.style-one {
-  background-color: #ffffff;
+  position: relative;
+  isolation: isolate;
+}
+
+section.feature-area.style-one::before,
+.case-study-area.style-one::before,
+section.gds-instructors-area::before,
+section.gds-classes-area::before,
+.testimonial-area.style-one::before,
+section.gds-faq-area::before,
+.blog-area.style-one::before,
+.brand-area.style-one::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
-    repeating-radial-gradient(
-      circle at 94% 7%,
-      rgba(106, 13, 173, 0.055) 0,
-      rgba(106, 13, 173, 0.055) 1px,
-      transparent 1px,
-      transparent 56px
-    ),
-    repeating-radial-gradient(
-      circle at 6% 93%,
-      rgba(106, 13, 173, 0.038) 0,
-      rgba(106, 13, 173, 0.038) 1px,
-      transparent 1px,
-      transparent 70px
-    ) !important;
+    repeating-linear-gradient(0deg,   rgba(106,13,173,0.09) 0, rgba(106,13,173,0.09) 1px, transparent 1px, transparent 52px),
+    repeating-linear-gradient(90deg,  rgba(106,13,173,0.09) 0, rgba(106,13,173,0.09) 1px, transparent 1px, transparent 52px);
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
+          mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
 }
