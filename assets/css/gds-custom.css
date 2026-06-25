@@ -1148,8 +1148,8 @@ section.gds-faq-area::before,
   z-index: -1;
   pointer-events: none;
   background-image:
-    repeating-linear-gradient(0deg,   rgba(106,13,173,0.09) 0, rgba(106,13,173,0.09) 1px, transparent 1px, transparent 52px),
-    repeating-linear-gradient(90deg,  rgba(106,13,173,0.09) 0, rgba(106,13,173,0.09) 1px, transparent 1px, transparent 52px);
+    repeating-linear-gradient(0deg,   rgba(106,13,173,0.035) 0, rgba(106,13,173,0.035) 1px, transparent 1px, transparent 52px),
+    repeating-linear-gradient(90deg,  rgba(106,13,173,0.035) 0, rgba(106,13,173,0.035) 1px, transparent 1px, transparent 52px);
   -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
           mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
 }
