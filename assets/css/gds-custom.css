@@ -1,0 +1,882 @@
+/* =====================================================
+   GDS Learning Centre - Footer & Edge-Case Styling
+   Targeted fixes for elements the purple conversion
+   doesn't handle gracefully on dark backgrounds
+   ===================================================== */
+
+/* Footer blog thumbnails - constrain image size */
+.footer-widget-blog-thumb img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+}
+
+/* Subscribe button - brighter hover */
+.subscribe-box button:hover {
+  background-color: #5B2D8E !important;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+/* Footer link hover - visible on dark bg */
+.footer-widget-menu ul li a:hover {
+  color: #9B59B6 !important;
+  padding-left: 8px !important;
+}
+
+/* Footer contact icons */
+.footer-contact-address span i {
+  color: #9B59B6 !important;
+}
+
+/* Blog date in footer */
+.footer-widget-blog-content p {
+  color: #9B59B6 !important;
+}
+
+/* Subscribe title span */
+.footer-subcribe-title h3 span {
+  color: #9B59B6 !important;
+}
+
+/* Footer bottom link */
+.footer-bottom-desc p a {
+  color: #9B59B6 !important;
+}
+.footer-bottom-desc p a:hover {
+  color: #BB8FCE !important;
+  text-decoration: underline !important;
+}
+
+/* Social icons hover */
+.footer-bottom-social-icon ul li a:hover {
+  background-color: #6A0DAD !important;
+  color: #fff !important;
+}
+
+/* Social icons hover background animation */
+.footer-bottom-social-icon ul li a::before {
+  background: #6A0DAD !important;
+}
+
+/* Scroll to top button */
+.prgoress_indicator.active-progress {
+  background: #6A0DAD !important;
+}
+
+/* Section title purple accent */
+.section_title::before {
+  background: #6A0DAD !important;
+}
+
+/* Header CTA button */
+/* ===== Navigation text colour (contrast on light vs dark hero) ===== */
+/* Default (inner pages have LIGHT banner): dark nav text */
+.header-menu > ul > li > a { color: #1a0b2e !important; }
+.header-menu > ul > li > a:hover { color: #6A0DAD !important; }
+
+/* Homepage has a DARK hero -> white nav text over it */
+body:has(section.hero_area.style-one) .header-menu > ul > li > a { color: #ffffff !important; }
+body:has(section.hero_area.style-one) .header-menu > ul > li > a:hover { color: #F3E5F5 !important; }
+
+/* Sticky header (scrolled) has a dark bar on every page -> white nav text */
+.sticky .header-menu > ul > li > a { color: #ffffff !important; }
+.sticky .header-menu > ul > li > a:hover { color: #F3E5F5 !important; }
+
+/* Dropdown items sit on a white panel -> keep them dark */
+.sub_menu li a { color: #1a1a1a !important; }
+.sub_menu li a:hover { color: #6A0DAD !important; }
+
+/* Header top area - solid purple, no visible bottom edge */
+.header-top-area {
+  background: #6A0DAD !important;
+}
+
+/* Remove any possible bottom border */
+.header-top-area,
+.row.header-top {
+  border-bottom: none !important;
+}
+
+/* No bottom border where header-top ends */
+.educate-header-area {
+  border-top: none !important;
+}
+
+/* Welcome link on purple bg - use white for contrast */
+.header-top-welcome p a {
+  color: #ffffff !important;
+}
+.header-top-welcome p a:hover {
+  color: #F3E5F5 !important;
+  text-decoration: underline !important;
+}
+
+/* Hero section - darker purple gradient with motion */
+section.hero_area.style-one {
+  background: linear-gradient(135deg, #0d0118 0%, #220a3d 45%, #3a0f5e 75%, #160626 100%) !important;
+  height: auto !important;
+  padding: 100px 0 80px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+section.hero_area.style-one .hero_content h5 {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+section.hero_area.style-one .hero_content h1 {
+  color: #ffffff !important;
+}
+
+section.hero_area.style-one .hero_content p {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+section.hero_area.style-one .hero-course-btn a {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+  color: #ffffff !important;
+  padding: 15px 35px !important;
+  border-radius: 30px !important;
+  display: inline-block !important;
+}
+section.hero_area.style-one .hero-course-btn a:hover {
+  background: rgba(255,255,255,0.1) !important;
+  border-color: #ffffff !important;
+}
+
+.header-btn a {
+  background: linear-gradient(135deg, #6A0DAD 0%, #7D3C98 50%, #5B2D8E 100%) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 15px rgba(142,68,173,0.3) !important;
+}
+.header-btn a:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(142,68,173,0.4) !important;
+}
+
+/* Breadcrumb area */
+.breadcrumb-area {
+  background: linear-gradient(135deg, #6A0DAD 0%, #7D3C98 50%, #5B2D8E 100%) !important;
+}
+
+/* Counter section */
+.counter-icon {
+  color: #6A0DAD !important;
+  background: #F3E5F5 !important;
+}
+
+/* Why choose section list icons */
+.choose-item-menu ul li span {
+  color: #6A0DAD !important;
+  background: #F3E5F5 !important;
+}
+
+/* Testimonial ratings */
+.testimonial-rating i {
+  color: #7D3C98 !important;
+}
+
+/* Section subtitle */
+.section-sub-title h6 {
+  color: #6A0DAD !important;
+}
+
+/* Pricing table featured */
+.pricing-table.featured {
+  border-top: 4px solid #6A0DAD !important;
+}
+
+/* Mobile mean menu */
+.mean-container a.meanmenu-reveal {
+  color: #6A0DAD !important;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  background: #6A0DAD !important;
+}
+
+/* Pagination */
+.pagination li.active a {
+  background: #6A0DAD !important;
+  border-color: #6A0DAD !important;
+}
+
+/* Form focus */
+input:focus, textarea:focus, select:focus {
+  border-color: #6A0DAD !important;
+}
+
+/* Hero rating box */
+.hero-rating-icon {
+  background: #6A0DAD !important;
+}
+
+/* Marquee section text */
+.marquee-section {
+  background: #6A0DAD !important;
+}
+
+/* Brand/client section top border */
+.brand-area {
+  border-top: 3px solid #F3E5F5 !important;
+}
+
+/* Button hover states that use primary color */
+.educate-btn a:hover {
+  background: linear-gradient(135deg, #5B2D8E 0%, #6A0DAD 100%) !important;
+  box-shadow: 0 6px 20px rgba(142,68,173,0.3) !important;
+}
+
+/* Sidebar menu overlay */
+.sidebar-menu-wrapper {
+  background: #5B2D8E !important;
+}
+
+/* Search popup */
+.search-popup {
+  background: rgba(94, 45, 142, 0.95) !important;
+}
+
+/* Single Amadeus partner logo — override theme's width:100% stretch */
+.brand-single { justify-content: center; }
+.brand-single .col-lg-12 { width: auto; flex: 0 0 auto; }
+.brand-single .single-brand-box,
+.brand-single .brand-thumb { width: auto; display: inline-block; }
+.brand-single .brand-thumb img {
+  width: auto !important;
+  max-height: 60px;
+  height: auto;
+}
+
+/* Bottom-fade mask for transparent cutout figures (match hero look) */
+.about-thumb > img,
+.choose-thumb > img,
+.offer-thumb > img,
+.testimonial-thumb > img,
+.faq-thumb > img {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 62%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 62%, rgba(0,0,0,0) 100%);
+}
+
+/* Hide avatar-style testimonial pagination dots (repetitive single-instructor face) */
+.testi-list .owl-dots,
+.testi-list-inner .owl-dots,
+.testimonial-area .owl-dots { display: none !important; }
+
+/* ===== Mission & Vision (About page) ===== */
+.gds-mv-area { padding: 10px 0 100px; }
+.gds-mv-card {
+  background: #fff; border: 1px solid #f0eaf6; border-radius: 18px;
+  padding: 40px 34px; height: 100%; position: relative; overflow: hidden;
+  box-shadow: 0 18px 50px rgba(94,45,142,.08); transition: transform .35s ease, box-shadow .35s ease;
+}
+.gds-mv-card:hover { transform: translateY(-6px); box-shadow: 0 28px 64px rgba(94,45,142,.16); }
+.gds-mv-card h3 { font-size: 24px; margin-bottom: 14px; color: #1a0b2e; }
+.gds-mv-card p { color: #5a5a6e; line-height: 1.75; margin: 0; }
+@media (max-width: 991px) { .gds-mv-area .col-lg-6:first-child .gds-mv-card { margin-bottom: 26px; } }
+
+/* ===== Cap maximum font weight at semibold (600) ===== */
+/* Base headings default to bold(700) in browsers; cap to semibold.
+   Theme rules that set 400/500 are more specific, so they still win (nothing gets heavier). */
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+b, strong, th { font-weight: 600; }
+/* Override any heavier declarations (utilities / inline / theme) */
+.fw-bold, .fw-bolder,
+[style*="font-weight:700"], [style*="font-weight: 700"],
+[style*="font-weight:800"], [style*="font-weight: 800"],
+[style*="font-weight:900"], [style*="font-weight: 900"],
+[style*="font-weight:bold"], [style*="font-weight: bold"] { font-weight: 600 !important; }
+
+/* ===== Title weight mix: semibold + light ===== */
+/* Multi-line section & hero titles alternate: odd line semibold, even line light */
+.section_title h1,
+.hero_content h1 { font-weight: 600; }
+.section_title h1:nth-of-type(even),
+.hero_content h1:nth-of-type(even) { font-weight: 300 !important; }
+
+/* ===== Menu font weight: normal ===== */
+.header-menu .nav_scroll > li > a,
+.header-menu .nav_scroll a,
+.nav_scroll a,
+.sub_menu li a,
+.mobile-menu .nav_scroll a { font-weight: 400 !important; }
+
+/* ===== Crisp text rendering (so normal weight isn't rendered heavy on macOS) ===== */
+body, .header-menu .nav_scroll a, .nav_scroll a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ===== Remove floating / decorative shape icons (hidden) — excludes FA icons & rating stars ===== */
+[class*="-shape"], [class*="shape-"],
+.breadcumb-dot, .bread-dot, .breadcumb-ball,
+.choose-circle, .choose-dot, .choose-star, .faq-circle, .faq-dot,
+.testi-dot, .testi-map, .brand-star, .brand-line,
+.rotateme, .bounce-animate, .bounce-animate-2, .bounce-animate-3, .bounce-animate-4,
+[class*="float-bob"], .movebounce, .moveleftbounce {
+  display: none !important;
+}
+/* protect functional UI */
+.prgoress_indicator, .progress-circle { display: block !important; }
+
+/* ===== Buttons: normal weight + sentence case (re-added) ===== */
+.header-btn a, .hero-button a, .hero-btn a, .hero-course-btn a,
+.course-btn a, .course-offer-btn a, .course-design-offer-btn a, .course-details-btn a,
+.about-btn a, .choose-btn a, .call-to-btn a, .blog-btn a,
+.event-btn a, .read-btn a, .theme-btn, .btn-style-two, .footer-btn a {
+  font-weight: 400 !important;
+  text-transform: lowercase !important;
+}
+.header-btn a::first-letter, .hero-button a::first-letter, .hero-btn a::first-letter, .hero-course-btn a::first-letter,
+.course-btn a::first-letter, .course-offer-btn a::first-letter, .course-design-offer-btn a::first-letter, .course-details-btn a::first-letter,
+.about-btn a::first-letter, .choose-btn a::first-letter, .call-to-btn a::first-letter, .blog-btn a::first-letter,
+.event-btn a::first-letter, .read-btn a::first-letter, .theme-btn::first-letter, .btn-style-two::first-letter, .footer-btn a::first-letter {
+  text-transform: uppercase !important;
+}
+
+/* ===== Header top Call/Email links: sentence case (not uppercase) ===== */
+.educate-header-from a,
+.header-top-area a, .header-top-welcome p,
+.login-btn, .sign-up-btn { text-transform: none !important; }
+
+/* ===== GDS Training Classes section ===== */
+.gds-classes-area { padding: 20px 0 100px; }
+.gds-class-card {
+  background: #fff; border: 1px solid #f0eaf6; border-radius: 18px;
+  padding: 0 0 30px; height: 100%; overflow: hidden;
+  box-shadow: 0 18px 50px rgba(94,45,142,.08); margin-bottom: 24px;
+}
+.gds-class-head {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 26px; font-weight: 600; color: #fff;
+  padding: 22px 32px; background: linear-gradient(135deg, #5e2d8e, #7c3abf);
+}
+/* Amadeus header — deeper purple to distinguish from Travelport, no warm colours */
+.gds-class-head.gds-head-2 { background: linear-gradient(135deg, #2e0854, #5e2d8e); }
+.gds-class-head i { font-size: 24px; }
+.gds-tier { padding: 24px 32px 4px; border-bottom: 1px solid #f3eefa; }
+.gds-tier:last-child { border-bottom: 0; }
+.gds-tier-top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.gds-tier-top h4 { font-size: 20px; font-weight: 600; color: #1a0b2e; margin: 0; }
+.gds-meta { font-size: 13px; font-weight: 500; color: #7c3abf; background: #f4ecfb; padding: 5px 12px; border-radius: 30px; }
+.gds-tier ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+.gds-tier ul li { position: relative; padding-left: 22px; color: #5a5a6e; line-height: 1.5; font-size: 15px; }
+.gds-tier ul li::before {
+  content: '\2713'; position: absolute; left: 0; top: 0; color: #7c3abf; font-weight: 700;
+}
+.gds-enroll-row { text-align: center; margin-top: 30px; }
+@media (max-width: 575px){ .gds-tier ul { grid-template-columns: 1fr; } }
+
+/* Override any stray icon image in pricing section subtitle */
+.section-sub-title.three h6 img { display: none; }
+
+/* =====================================================
+   ELEGANT PRELOADER — replaces orange / bulky default
+   ===================================================== */
+
+/* Deep dark purple canvas — matches hero gradient start */
+.loading-screen {
+  background: #0d0118 !important;
+}
+
+/* Bars blend into background for a silent, clean page reveal */
+.loading-screen .bar {
+  background-color: #0d0118 !important;
+}
+
+/* Centre the inner content as a column */
+.loading-screen .animation-preloader {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Thin, minimal arc spinner — 52 px, 1.5 px stroke */
+.loading-screen .animation-preloader .spinner {
+  width: 52px !important;
+  height: 52px !important;
+  border: 1.5px solid rgba(155, 91, 182, 0.15) !important;
+  border-top-color: #9B59B6 !important;
+  border-right-color: rgba(106, 13, 173, 0.45) !important;
+  margin: 0 auto 28px !important;
+  animation-duration: 0.9s !important;
+}
+
+/* Hide the "Educate" letter-flip — it says the wrong brand and reads as template */
+.loading-screen .animation-preloader .txt-loading {
+  display: none !important;
+}
+
+/* Inject brand name below spinner via CSS — no HTML edits required */
+.loading-screen .animation-preloader::after {
+  content: 'GDS LEARNING CENTRE';
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.28);
+  text-transform: uppercase;
+  animation: gds-loader-fade 1.4s ease forwards;
+}
+
+@keyframes gds-loader-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Hero Section — Elegant Dot Grid ===== */
+section.hero_area.style-one {
+  /* position: relative and overflow: hidden already set above */
+}
+section.hero_area.style-one::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.13) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Keep all hero children above the dot layer */
+section.hero_area.style-one > .container,
+section.hero_area.style-one > * > .container,
+section.hero_area.style-one .hero_content,
+section.hero_area.style-one .hero-right-image,
+section.hero_area.style-one [class*="hero"] { position: relative; z-index: 1; }
+
+
+
+/* =====================================================
+   NUCLEAR COLOR RESET — purple & white only
+   This block kills every orange / cyan / teal / green /
+   magenta colour that comes from the original template.
+   ===================================================== */
+
+/* ── 1. Override all CSS theme variables (fixes 90+ elements in one shot) ── */
+:root {
+  --Secondary-color:          #7c3abf;  /* was orange  #ff853f */
+  --tertiary-color:           #6A0DAD;  /* was cyan    #15c1fa */
+  --fourtiary-color:          #9B59B6;  /* was magenta #a64cf9 */
+  --box-bg:                   #f8f3ff;  /* was orange-tinted   #fdf7f3 */
+  --box-bg2:                  #f4ecfb;  /* was teal-tinted     #f0fbf8 */
+  --btn-white-border-hover:   #5e2d8e;  /* was orange  #D46C20 */
+  --btn-white-bg-hover:       #5e2d8e;  /* was orange  #D46C20 */
+  --new-label-bg:             #6A0DAD;  /* was orange  #D46C20 */
+  --coming-soon-label-bg:     #7c3abf;  /* was red     #f94c30 */
+  --theme-orange-color:       #6A0DAD;  /* was red     #f94c30 */
+  --section-background-1:     #6A0DAD;  /* was orange  #D46C20 */
+}
+
+/* ── 2. Team member photo hover overlay — all 4 box variants → purple ── */
+.style-one .team-thumb::before,
+.style-one .single-team-box.box-1 .team-thumb::before,
+.style-one .single-team-box.box-2 .team-thumb::before,
+.style-one .single-team-box.box-3 .team-thumb::before,
+.style-one .single-team-box.box-4 .team-thumb::before {
+  background-image: linear-gradient(
+    0deg,
+    rgba(46, 8, 84, 0.95) 0%,
+    rgba(94, 45, 142, 0.55) 35%,
+    rgba(94, 45, 142, 0) 70%
+  ) !important;
+}
+
+/* ── 3. Case-study / course card h5 category badges ── */
+/* box-1: was cyan rgba */
+.style-one .case-study-content h5 {
+  color: #6A0DAD !important;
+  background-color: rgba(106, 13, 173, 0.08) !important;
+  border-color: rgba(106, 13, 173, 0.22) !important;
+}
+/* box-2: was orange rgba */
+.style-one .case-study-single-box.box-2 .case-study-content h5 {
+  color: #7c3abf !important;
+  background-color: rgba(124, 58, 191, 0.08) !important;
+  border-color: rgba(124, 58, 191, 0.22) !important;
+}
+
+/* ── 4. Blog card box backgrounds — hard-coded teal / orange tints ── */
+.style-one .single-blog-box.box-2 { background-color: #f8f3ff !important; }
+.style-one .single-blog-box.box-3 { background-color: #f4ecfb !important; }
+
+/* ── 5. Blog "read more" buttons — box-3 has hard-coded orange rgba ── */
+.style-one .single-blog-box.box-3 .blog-btn a {
+  color: #7c3abf !important;
+  background-color: rgba(124, 58, 191, 0.08) !important;
+  border-color: rgba(124, 58, 191, 0.22) !important;
+}
+.style-one .single-blog-box.box-3 .blog-btn a::before {
+  background: #7c3abf !important;
+}
+
+/* ── 6. Star / rating colours — all section style variants ── */
+.style-one  .case-rating ul li,
+.style-one  .testi-ratting ul li,
+.style-two  .testi-ratting ul li,
+.style-three .testi-ratting ul li,
+.style-four .testi-ratting ul li,
+.style-five .testi-ratting ul li,
+.style-inner .testi-ratting ul li,
+.style-two  .course-rating ul li,
+.style-five .course-rating ul li,
+.testi-ratting ul li,
+.course-rating ul li,
+.ins-rating-box-icon ul li,
+.breadcumb-star ul li,
+.post-rating a,
+.post-rating i { color: #9B59B6 !important; }
+
+/* Barfiller progress bars in course-details */
+.barfiller .fill { background: #6A0DAD !important; }
+.barfiller { border-color: #e0d4f5 !important; }
+
+/* ── 7. Sticky header CTA — hard-coded orange hover ── */
+.sticky .educate_btn a::before,
+.sticky .header-btn a::before { background: #5e2d8e !important; }
+
+/* ── 8. Section counters / feature icons that pull --Secondary-color ── */
+/* (already fixed via variable override; belt-and-braces for inline rgba) */
+.counter-icon i,
+.choose-item-menu ul li span i { color: #6A0DAD !important; }
+
+/* ── 9. Any residual hard-coded orange / cyan / teal in utility classes ── */
+[style*="#ff853f"],
+[style*="#15c1fa"],
+[style*="#a64cf9"],
+[style*="#D46C20"],
+[style*="#f94c30"],
+[style*="rgb(255, 133, 63)"],
+[style*="rgb(30, 194, 142)"],
+[style*="rgb(21, 193, 250)"],
+[style*="rgb(166, 76, 249)"] { color: #6A0DAD !important; background-color: transparent !important; }
+
+/* ── 10. Blog author dot markers (style-five hard-coded) ── */
+.blog-area.style-one.five .single-blog-box.box-1::before,
+.blog-area.style-one.five .blog-author h4::before,
+.blog-area.style-one.five .single-blog-box.box-2 .blog-author h4::before,
+.blog-area.style-one.five .single-blog-box.box-3 .blog-author h4::before {
+  background-color: #7c3abf !important;
+}
+
+/* ── 11. Category item badges (all 13 variants → purple family) ── */
+.category-items-box .category-item a {
+  background-color: #f4ecfb !important;
+  color: #5e2d8e !important;
+  border-color: rgba(106, 13, 173, 0.15) !important;
+}
+.category-items-box .category-item a:hover {
+  background-color: #6A0DAD !important;
+  color: #fff !important;
+}
+/* Kill all per-item colour overrides */
+.category-item.item-2  a,  .category-item.item-3  a,
+.category-item.item-4  a,  .category-item.item-5  a,
+.category-item.item-6  a,  .category-item.item-7  a,
+.category-item.item-8  a,  .category-item.item-9  a,
+.category-item.item-10 a,  .category-item.item-11 a,
+.category-item.item-12 a,  .category-item.item-13 a {
+  background-color: #f4ecfb !important;
+  color: #5e2d8e !important;
+}
+.category-item.item-2  a:hover, .category-item.item-3  a:hover,
+.category-item.item-4  a:hover, .category-item.item-5  a:hover,
+.category-item.item-6  a:hover, .category-item.item-7  a:hover,
+.category-item.item-8  a:hover, .category-item.item-9  a:hover,
+.category-item.item-10 a:hover, .category-item.item-11 a:hover,
+.category-item.item-12 a:hover, .category-item.item-13 a:hover {
+  background-color: #6A0DAD !important;
+  color: #fff !important;
+}
+
+/* ===== WhatsApp Floating Button ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 95px;
+  right: 28px;
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
+}
+.whatsapp-float::before {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.35);
+  animation: wa-pulse 2s ease-out infinite;
+}
+@keyframes wa-pulse {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  70%  { transform: scale(1.6); opacity: 0;   }
+  100% { transform: scale(1.6); opacity: 0;   }
+}
+.whatsapp-float .wa-tooltip {
+  position: absolute;
+  right: 70px;
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Outfit', sans-serif;
+  white-space: nowrap;
+  padding: 6px 14px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.whatsapp-float .wa-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-right: none;
+  border-left-color: #1a1a2e;
+}
+.whatsapp-float:hover .wa-tooltip { opacity: 1; }
+
+/* Remove scroll-up progress circle */
+.prgoress_indicator { display: none !important; }
+
+/* ===== Meet Our Instructor Section ===== */
+.gds-instructors-area {
+  padding: 90px 0 110px;
+  background: #fcf9ff;
+}
+
+/* Single instructor photo */
+.gds-instr-single-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+.gds-instr-single-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Profile text side */
+.gds-instr-profile { padding-left: 10px; }
+
+.gds-instr-role {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #9B59B6;
+  margin-bottom: 14px;
+}
+
+.gds-instr-profile h2 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #1a0b2e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.gds-instr-divider {
+  width: 48px;
+  height: 2px;
+  background: #6A0DAD;
+  margin-bottom: 24px;
+}
+
+.gds-instr-profile > p {
+  font-size: 15px;
+  color: #5a5a6e;
+  line-height: 1.85;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.gds-instr-stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: flex;
+  gap: 32px;
+}
+.gds-instr-stats li {
+  display: flex;
+  flex-direction: column;
+}
+.gds-instr-stats li strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a0b2e;
+  margin-bottom: 3px;
+}
+.gds-instr-stats li span {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9B59B6;
+}
+
+.gds-instr-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #6A0DAD;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.gds-instr-cta:hover {
+  background: #2e0854;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .gds-instr-featured .col-lg-5 { margin-bottom: 48px; }
+  .gds-instr-profile { padding-left: 0; }
+  .gds-instr-profile h2 { font-size: 32px; }
+}
+@media (max-width: 575px) {
+  .gds-instructors-area { padding: 60px 0 70px; }
+  .gds-instr-gallery-strip { width: 70px; }
+  .gds-instr-stats { gap: 20px; }
+}
+
+/* ===== FAQ Section ===== */
+.gds-faq-area {
+  padding: 90px 0 70px;
+  background: #fff;
+}
+
+.gds-faq-item {
+  border-bottom: 1px solid #ede8f5;
+  margin-bottom: 0;
+}
+
+.gds-faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a0b2e;
+  padding: 20px 40px 20px 0;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+.gds-faq-q::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 300;
+  color: #6A0DAD;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+.gds-faq-q.open { color: #6A0DAD; }
+.gds-faq-q.open::after {
+  content: '−';
+  transform: translateY(-50%);
+}
+
+.gds-faq-a {
+  display: none;
+  padding: 0 40px 20px 0;
+}
+.gds-faq-a p {
+  font-size: 14px;
+  color: #5a5a6e;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.gds-faq-footer {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #ede8f5;
+}
+.gds-faq-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b6b80;
+}
+.gds-faq-footer a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #6A0DAD;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+.gds-faq-footer a:hover { color: #2e0854; }
+.gds-faq-cta {
+  background: #6A0DAD !important;
+  color: #fff !important;
+  padding: 11px 26px;
+  border-radius: 2px;
+}
+.gds-faq-cta:hover { background: #2e0854 !important; color: #fff !important; }
+
+@media (max-width: 767px) {
+  .gds-faq-area { padding: 60px 0 50px; }
+  .gds-faq-footer { flex-wrap: wrap; gap: 16px; }
+}
+
+/* ===== Logo visibility on light backgrounds ===== */
+/* Inner pages have a white header — make white logo visible */
+body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
+  filter: brightness(0);
+}
+/* Sticky header is always dark purple — keep logo white */
+.sticky .header-logo img {
+  filter: brightness(10) !important;
+}
+
+/* Sharon Keter instructor photo — rounded corners */
+.gds-instr-single-photo,
+.gds-instr-single-photo img {
+  border-radius: 15px;
+}
