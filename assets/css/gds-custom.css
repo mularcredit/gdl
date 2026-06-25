@@ -432,7 +432,7 @@ section.feature-area.style-two { padding: 50px 0 40px !important; }
 /* ===== Mission & Vision (About page) ===== */
 .gds-mv-area { padding: 10px 0 60px; }
 .gds-mv-card {
-  background: #fff; border: 1px solid #f0eaf6; border-radius: 18px;
+  background: #f4ecfb; border: 1px solid rgba(106,13,173,0.15); border-radius: 18px;
   padding: 40px 34px; height: 100%; position: relative; overflow: hidden;
   box-shadow: 0 18px 50px rgba(94,45,142,.08); transition: transform .35s ease, box-shadow .35s ease;
 }
@@ -513,7 +513,7 @@ body, .header-menu .nav_scroll a, .nav_scroll a {
 /* ===== GDS Training Classes section ===== */
 .gds-classes-area { padding: 20px 0 100px; }
 .gds-class-card {
-  background: #fff; border: 1px solid #f0eaf6; border-radius: 18px;
+  background: #f4ecfb; border: 1px solid rgba(106,13,173,0.15); border-radius: 18px;
   padding: 0 0 30px; height: 100%; overflow: hidden;
   box-shadow: 0 18px 50px rgba(94,45,142,.08); margin-bottom: 24px;
 }
@@ -628,7 +628,7 @@ section.hero_area.style-one [class*="hero"] { position: relative; z-index: 1; }
 section.about-area.style-one,
 section.about-area.style-three,
 section.about-area.style-three.inner {
-  background: linear-gradient(135deg, #f8f4ff 0%, #f0e8fc 100%) !important;
+  background: #f4ecfb !important;
 }
 
 /* ── 1. Override all CSS theme variables (fixes 90+ elements in one shot) ── */
@@ -675,7 +675,7 @@ section.about-area.style-three.inner {
 }
 
 /* ── 4. Blog card box backgrounds — hard-coded teal / orange tints ── */
-.style-one .single-blog-box.box-2 { background-color: #f8f3ff !important; }
+.style-one .single-blog-box.box-2 { background-color: #f4ecfb !important; }
 .style-one .single-blog-box.box-3 { background-color: #f4ecfb !important; }
 
 /* ── 5. Blog "read more" buttons — box-3 has hard-coded orange rgba ── */
@@ -839,7 +839,7 @@ section.about-area.style-three.inner {
 /* ===== Meet Our Instructor Section ===== */
 .gds-instructors-area {
   padding: 90px 0 110px;
-  background: #fcf9ff;
+  background: #f4ecfb;
 }
 
 /* Single instructor photo */
@@ -1084,7 +1084,7 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 
 /* ===== Why Choose Us section ===== */
 .why-choose-area.style-one {
-  background: linear-gradient(135deg, #f4ecfb 0%, #e8d8f8 50%, #f0e8fc 100%) !important;
+  background: #f4ecfb !important;
   padding: 80px 0 80px !important;
 }
 
@@ -1228,4 +1228,18 @@ section.gds-faq-area::before,
   color: #ffd700 !important;
   display: inline-block;
   animation: trophy-drop 2s ease-in-out infinite;
+}
+
+/* ===== Remaining sections — uniform light purple background ===== */
+.course-design-offer-area.style-one,
+.course-design-offer-area.style-one.inner,
+section.about-area.style-two,
+.call-to-action + section,
+section.gds-mv-area {
+  background-color: #f4ecfb !important;
+}
+
+/* Body default — prevents any unstyled area from showing white */
+body {
+  background-color: #f4ecfb;
 }
