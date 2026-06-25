@@ -875,11 +875,19 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   filter: brightness(10) !important;
 }
 
-/* ===== Inner page hero / breadcrumb background ===== */
-.breadcumb-area,
-.breadcumb-area.two {
-  background: linear-gradient(to right, rgba(30,20,60,0.72) 40%, rgba(30,20,60,0.30) 100%),
-              url('../images/gds/hero-inner.png') right center / cover no-repeat !important;
+/* ===== Inner page hero / breadcrumb ===== */
+/* Keep original template background, just style the person image */
+.gds-breadcumb-person {
+  height: 320px;
+  width: auto;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+}
+@media (max-width: 991px) {
+  .gds-breadcumb-person { display: none; }
 }
 
 /* Sharon Keter instructor photo — rounded corners */
