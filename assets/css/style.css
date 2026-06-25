@@ -3526,7 +3526,7 @@ section.feature-area.style-one {
 
 .style-one .single-feature-box{
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 48px 35px 48px 38px;
     position: relative;
     z-index: 1;
@@ -3653,7 +3653,7 @@ section.feature-area.style-one {
 <-- educate feature Area Css  style-two -->
 ==============================================*/
 section.feature-area.style-two {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 72px 0 60px;
     position: relative;
     z-index: 1;
@@ -4867,7 +4867,7 @@ section.about-area.style-three.inner .section-sub-title.three h6 img {
 
 .about-education-box {
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     display: inline-block;
     width: 200px;
     height: 236px;
@@ -4972,7 +4972,7 @@ section.about-area.style-four .section-sub-title.three h6 img {
 
 .style-four .about-mission-box {
     border-radius: 10px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 35px 30px 30px;
     transition: 0.5s;
 }
@@ -5585,7 +5585,7 @@ display: none;
     font-weight: 500;
     font-family: "Outfit";
     border-radius: 22px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     transition: 0.5s;
 }
 
@@ -6668,7 +6668,7 @@ display: none;
 }
 
 .style-one .single-team-box.box-2 {
-    background-color: #f0fbf8; 
+    background-color: #f4ecfb; 
 }
 
 .style-one .single-team-box.box-3 {
@@ -7156,7 +7156,7 @@ display: none;
     z-index: -1;
 }
 .style-three .single-team-box.box-2::before{
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 .style-three .single-team-box.box-3::before{
     background-color: #fdf7f3;
@@ -7343,7 +7343,7 @@ display: none;
     /* educate testimonial Area css style-one */
 /* ================================================ */
 .testimonial-area.style-one {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 110px 0 0px;
     position: relative;
 }
@@ -7463,7 +7463,7 @@ display: none;
     height: 85px;
     line-height: 85px;
     border-radius: 50%;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     border: 1px solid #6A0DAD;
     left: -5px;
     top: -5px;
@@ -8261,7 +8261,7 @@ display: none;
 }
 .testimonial-area.style-saven .single-testi-box {
     border-radius: 15px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 50px 40px 50px 45px;
 }
 .testimonial-area.style-saven .section-sub-title.six h6 {
@@ -8398,7 +8398,7 @@ display: none;
     /* educate testimonial Area css style-inner */
 /* ================================================ */
 .testimonial-area.style-inner {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 100px 0 45px;
     position: relative;
 }
@@ -8818,7 +8818,7 @@ display: none;
 }
 
 .style-one .single-blog-box.box-2 {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 
 .style-one .single-blog-box.box-3 {
@@ -9531,7 +9531,7 @@ display: none;
     /* educate brand Area css style-one */
 /* ================================================ */
 .brand-area.style-one {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 78px 0;
     position: relative;
 }
@@ -10051,7 +10051,7 @@ display: none;
 }
 .style-three .category-item-box {
     border-radius: 15px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 40px 0px 40px;
     margin-bottom: 20px;
     text-align: center;
@@ -10665,7 +10665,7 @@ display: none;
     width: 378px;
     height: 333px;
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     right: 0;
     top: 0;
     z-index: -1;
@@ -10894,7 +10894,7 @@ display: none;
     margin-bottom: 20px;
 }
 .educate-trending-course.style-saven .course-single-box.box-2{
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 .educate-trending-course.style-saven .course-single-box.box-3{
     background-color: #fdf7f3;
@@ -11408,7 +11408,7 @@ display: none;
 }
 .feature-course-area.style-saven .feature-course-box {
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     display: flex;
     align-items: center;
     gap: 35px;
@@ -11762,7 +11762,7 @@ display: none;
 /* ============================================= */
 .course-program-area.style-three {
     padding: 110px 0 100px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     position: relative;
 }
 
@@ -12191,7 +12191,7 @@ display: none;
 
 .style-three .campus-single-box {
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 40px 28px 35px;
     text-align: center;
 }
@@ -12365,7 +12365,7 @@ display: none;
 
 .style-one .joint-event-box {
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 60px 40px 65px 58px;
     transition: .5s;
     position: relative;
@@ -12817,7 +12817,7 @@ display: none;
     /* educate faq Area css style-one */
 /* ============================================= */
 .faq-area.style-one {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 100px 0 20px;
     position: relative;
 }
@@ -13868,7 +13868,7 @@ display: none;
     /* educate counter area css style-one */
 /* ============================================= */
 .counter-area.style-one {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 120px 0 100px;
 }
 .style-one .single-counter-box {
@@ -13914,7 +13914,7 @@ display: none;
 <-- educate subscribe Area css-->
 ==============================================*/
 .subscribe-area.style-five {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 60px 0 70px;
     position: relative;
 }
@@ -14004,7 +14004,7 @@ section.gym-program-area.style-one .single-gym-box {
 }
 section.gym-program-area.style-one .gym-content-inner {
     border-radius: 14px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     margin: 10px;
     padding: 45px 20px 35px 35px;
     position: relative;
@@ -15221,7 +15221,7 @@ section.event-details-area.style-inner {
 /* Start Count Down css*/
 .style-inner #clockdiv {
     border-radius: 10px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     border: 1px solid rgba(106,13,173,0.2);
     padding: 20px 16px  20px;
 }
@@ -15373,7 +15373,7 @@ section.course-details-area.style-inner {
     justify-content: space-between;
     color: #1e1e1e;
     border-radius: 10px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     font-family: "Outfit";
 }
 
@@ -15528,7 +15528,7 @@ section.course-details-area.style-inner {
 /* instructor ratting box */
 .style-inner .instructor-ratting-box {
     border-radius: 16px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     text-align: center;
     padding: 50px 0 60px;
 }
@@ -15769,7 +15769,7 @@ border: 2px solid rgba(255,255,255,0.3);
 }
 
 .educate-details-course-area.style-inner.details {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 110px 0 90px;
 }
 
@@ -15884,7 +15884,7 @@ section.course-details-area.style-inner .event-info-btn a {
 }
 
 .style-inner .single-pricing-box.box-2{
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 
 .style-inner .single-pricing-box.box-3{
@@ -16310,7 +16310,7 @@ section.course-details-area.style-inner .event-info-btn a {
 }
 .style-two .pricing-box-inner {
     border-radius: 14px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     margin: 25px 25px 25px 25px;
     padding: 40px 28px 45px 40px;
 }
@@ -16871,7 +16871,7 @@ section.course-details-area.style-inner .event-info-btn a {
 
 .shop-section .widget-category-box {
     border-radius: 8px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 34px 30px 12px;
     margin-bottom: 25px;
 }
@@ -16902,7 +16902,7 @@ section.course-details-area.style-inner .event-info-btn a {
 }
 
 .shop-section .range-wrapper-box {
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     padding: 40px 30px 40px;
     border-radius: 8px;
 }
@@ -18042,7 +18042,7 @@ span#slider-range-value2 {
     width: 100%;
     height: 56px;
     border-radius: 5px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     border: 0;
     outline: 0;
     padding-left: 20px;
@@ -18349,7 +18349,7 @@ h4.sidebar-title {
     color: #616161;
     font-weight: 400;
     font-family: "Outfit";
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
     transition: 0.5s;
 }
 
@@ -18432,7 +18432,7 @@ h4.sidebar-title {
     position: relative;
     padding: 45px 253px 26px 40px;
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 
 .blog-details-area .blog-details-comment-thumb {
@@ -18563,7 +18563,7 @@ section.contact_area.inner_section .section-sub-title.three h6 img {
 .inner_section .contact_main_info {
     padding: 40px 40px 42px;
     border-radius: 20px;
-    background-color: #f0fbf8;
+    background-color: #f4ecfb;
 }
 
 .inner_section .contact_main_info .call-do-action-info {

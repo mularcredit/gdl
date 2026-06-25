@@ -611,6 +611,13 @@ section.hero_area.style-one [class*="hero"] { position: relative; z-index: 1; }
    magenta colour that comes from the original template.
    ===================================================== */
 
+/* ── 0. Replace green-tinted background images with purple tint ── */
+section.about-area.style-one,
+section.about-area.style-three,
+section.about-area.style-three.inner {
+  background: linear-gradient(135deg, #f8f4ff 0%, #f0e8fc 100%) !important;
+}
+
 /* ── 1. Override all CSS theme variables (fixes 90+ elements in one shot) ── */
 :root {
   --Secondary-color:          #7c3abf;  /* was orange  #ff853f */
@@ -1035,7 +1042,7 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 /* Replace baked-in people from template PNG with clean CSS gradient */
 .breadcumb-area,
 .breadcumb-area.two {
-  background: radial-gradient(ellipse at 20% 60%, #a8e6c8 0%, #c8f0de 25%, #e4f8f0 55%, #f5fffe 80%, #ffffff 100%) !important;
+  background: radial-gradient(ellipse at 20% 60%, #d4b8f0 0%, #e4d0f8 30%, #f0e8fc 60%, #f8f4ff 85%, #ffffff 100%) !important;
   overflow: hidden;
   padding: 80px 0 40px !important;
 }
