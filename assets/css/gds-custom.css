@@ -8,6 +8,16 @@
 img {
   border-radius: 15px;
 }
+
+/* Course card and sidebar thumbnails — constrain size */
+.course-details-thumb img,
+.event-sidebar-thumb img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
 /* Exclude logos, icons, tiny decorative images */
 .header-logo img,
 .mobile-logo img,
