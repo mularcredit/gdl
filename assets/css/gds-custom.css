@@ -876,7 +876,12 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
 }
 
 /* ===== Inner page hero / breadcrumb ===== */
-/* Keep original template background, just style the person image */
+/* Replace template background image with brand gradient */
+.breadcumb-area,
+.breadcumb-area.two {
+  background: linear-gradient(135deg, #1e1240 0%, #3b1f7a 60%, #6d28d9 100%) !important;
+}
+
 .gds-breadcumb-person {
   height: 320px;
   width: auto;
