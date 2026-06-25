@@ -950,7 +950,7 @@ section.about-area.style-three.inner {
 /* ===== FAQ Section ===== */
 .gds-faq-area {
   padding: 60px 0 40px;
-  background: #fff;
+  background: #f4ecfb;
 }
 
 .gds-faq-item {
@@ -1134,7 +1134,7 @@ body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
   .gds-cta-person { display: none; }
 }
 
-/* ===== Decorative faint grid lines fading from centre outwards ===== */
+/* ===== Light purple background + decorative grid lines ===== */
 section.feature-area.style-one,
 .case-study-area.style-one,
 section.gds-instructors-area,
@@ -1145,6 +1145,7 @@ section.gds-faq-area,
 .brand-area.style-one {
   position: relative;
   isolation: isolate;
+  background-color: #f4ecfb !important;
 }
 
 section.feature-area.style-one::before,
