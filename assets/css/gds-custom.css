@@ -4,6 +4,34 @@
    doesn't handle gracefully on dark backgrounds
    ===================================================== */
 
+/* Global 15px rounded corners on all content images */
+img {
+  border-radius: 15px;
+}
+/* Exclude logos, icons, tiny decorative images */
+.header-logo img,
+.mobile-logo img,
+.sidebar-logo img,
+.footer-logo img,
+.preloader img,
+img[src*="icon"],
+img[src*="shape"],
+img[src*="dot"],
+img[src*="ball"],
+img[src*="star"],
+img[src*="arrow"],
+img[src*="flaticon"],
+img[src*="fav-icon"],
+img[src*="top-star"],
+img[src*="sub-title"],
+img[src*="book-hand"],
+img[src*="bread-dot"],
+img[src*="call"],
+img[src*="amadeus"],
+img[src*="logo"] {
+  border-radius: 0;
+}
+
 /* Footer blog thumbnails - constrain image size */
 .footer-widget-blog-thumb img {
   width: 80px !important;
