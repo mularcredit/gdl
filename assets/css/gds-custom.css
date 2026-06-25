@@ -4,6 +4,24 @@
    doesn't handle gracefully on dark backgrounds
    ===================================================== */
 
+/* ===== Section & card titles — thin weight ===== */
+.section_title h1,
+.section_title h2,
+.section_title h3,
+.course-details-box h4,
+.course-details-box h3,
+.event-inner-box h4,
+.event-inner-box h3,
+.joint-event-box h4,
+.joint-event-box h3,
+.gds-class-card h3,
+.gds-class-card h4,
+.single-feature-box h4,
+.educate-hover-box h4 {
+  font-weight: 300 !important;
+  letter-spacing: 0.01em;
+}
+
 /* ===== Global card style — transparent with thin border ===== */
 .course-details-box,
 .course-details-content,
