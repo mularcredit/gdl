@@ -1165,3 +1165,55 @@ section.gds-faq-area::before,
   -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
           mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 0%, transparent 100%);
 }
+
+/* ===== Hero badge — trophy icon + rainbow animated border ===== */
+@keyframes rainbow-border {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gds-hero-badge {
+  position: relative;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px !important;
+  border-radius: 30px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.04em;
+  background: rgba(255,255,255,0.08);
+  z-index: 1;
+}
+
+/* Rainbow animated border via pseudo-element */
+.gds-hero-badge::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 32px;
+  background: linear-gradient(90deg,
+    #ff0080, #ff8c00, #ffe000, #00ff80,
+    #00cfff, #a855f7, #ff0080, #ff8c00
+  );
+  background-size: 300% 300%;
+  animation: rainbow-border 3s linear infinite;
+  z-index: -1;
+}
+
+/* Inner fill to cover the gradient behind text */
+.gds-hero-badge::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 28px;
+  background: rgba(20, 5, 45, 0.75);
+  z-index: -1;
+}
+
+.gds-hero-badge i {
+  font-size: 13px;
+  color: #ffd700 !important;
+}
