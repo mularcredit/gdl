@@ -1984,31 +1984,24 @@ select.gds-input { appearance: none; cursor: pointer; }
   padding: 0 !important;
 }
 
-/* Mean bar (the whole top strip) */
+/* Mean bar (the whole top strip) — keep float layout, just recolour */
 .mean-container .mean-bar {
   background: #1a0535 !important;
   min-height: 64px !important;
-  display: flex;
-  align-items: center;
 }
 
 /* Hamburger icon — white bars visible on dark background */
 .mean-container a.meanmenu-reveal {
   color: #ffffff !important;
   top: 0 !important;
-  padding: 20px 18px !important;
-  height: 64px !important;
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  padding: 21px 18px !important;
+  height: auto !important;
 }
 .mean-container a.meanmenu-reveal span {
   background: #ffffff !important;
   height: 2px !important;
   width: 22px !important;
-  margin: 0 !important;
+  margin-top: 5px !important;
   display: block !important;
 }
 
@@ -2080,8 +2073,7 @@ select.gds-input { appearance: none; cursor: pointer; }
 .mean-container .mean-nav ul li a i { display: none !important; }
 
 /* ── General mobile overflow fix ── */
-body { overflow-x: hidden; }
-section, .container, .row { max-width: 100%; }
+html, body { overflow-x: hidden; max-width: 100%; }
 
 /* ── Hero section — prevent right-image overflow on mobile ── */
 @media (max-width: 991px) {
