@@ -409,18 +409,20 @@
 							<h4 class="gds-step-title">Course Selection</h4>
 
 							<p class="gds-field-label">GDS Platform</p>
-							<div class="gds-option-group">
+							<div class="gds-option-group" id="platform-group">
 								<label class="gds-option-card"><input type="radio" name="platform" value="Amadeus GDS"><span><i class="bi bi-laptop"></i> Amadeus</span></label>
 								<label class="gds-option-card"><input type="radio" name="platform" value="Travelport GDS"><span><i class="bi bi-globe"></i> Travelport</span></label>
 								<label class="gds-option-card"><input type="radio" name="platform" value="Both Platforms"><span><i class="bi bi-layers"></i> Both</span></label>
 							</div>
+							<p class="gds-err" id="err-platform" style="display:none;color:#e74c3c;font-size:12px;margin:4px 0 8px;">Please select a platform</p>
 
 							<p class="gds-field-label">Level</p>
-							<div class="gds-option-group">
+							<div class="gds-option-group" id="level-group">
 								<label class="gds-option-card"><input type="radio" name="level" value="Basics"><span>Basics</span></label>
 								<label class="gds-option-card"><input type="radio" name="level" value="Expert"><span>Expert</span></label>
 								<label class="gds-option-card"><input type="radio" name="level" value="Full Programme"><span>Full Programme</span></label>
 							</div>
+							<p class="gds-err" id="err-level" style="display:none;color:#e74c3c;font-size:12px;margin:4px 0 8px;">Please select a level</p>
 
 							<p class="gds-field-label">Preferred Schedule</p>
 							<select class="gds-input" name="schedule">
@@ -493,17 +495,25 @@
 			<script>
 			function gdsNext(step) {
 				const s = document.getElementById('step-' + step);
-				const required = s.querySelectorAll('[required]');
 				let ok = true;
-				required.forEach(el => {
-					el.style.borderColor = '';
-					if (el.type === 'radio') return;
-					if (!el.value.trim()) { el.style.borderColor = '#e74c3c'; ok = false; }
-				});
-				if (step === 2) {
-					if (!s.querySelector('input[name="platform"]:checked')) { alert('Please select a GDS platform.'); ok = false; }
-					if (!s.querySelector('input[name="level"]:checked')) { alert('Please select a level.'); ok = false; }
+
+				if (step === 1) {
+					s.querySelectorAll('input[required]').forEach(function(el) {
+						el.style.borderColor = '';
+						if (!el.value.trim()) { el.style.borderColor = '#e74c3c'; ok = false; }
+					});
 				}
+
+				if (step === 2) {
+					var pErr = document.getElementById('err-platform');
+					var lErr = document.getElementById('err-level');
+					var pOk = !!s.querySelector('input[name="platform"]:checked');
+					var lOk = !!s.querySelector('input[name="level"]:checked');
+					pErr.style.display = pOk ? 'none' : 'block';
+					lErr.style.display = lOk ? 'none' : 'block';
+					if (!pOk || !lOk) ok = false;
+				}
+
 				if (!ok) return;
 				if (step === 3) buildSummary();
 				document.getElementById('step-' + step).classList.remove('active');
