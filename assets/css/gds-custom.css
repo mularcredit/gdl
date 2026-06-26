@@ -1079,14 +1079,18 @@ section.about-area.style-three.inner {
   .gds-faq-footer { flex-wrap: wrap; gap: 16px; }
 }
 
-/* ===== Logo visibility on light backgrounds ===== */
-/* Inner pages have a white header — make white logo visible */
+/* ===== Logo visibility — logo3.png has transparent background ===== */
+/* Inner pages: white header — darken the light-grey crest elements */
 body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
-  filter: brightness(0);
+  filter: brightness(0.1) contrast(1.2);
 }
-/* Sticky header is always dark purple — keep logo white */
+/* Homepage dark hero — logo looks great at natural colors, slight brighten */
+body:has(section.hero_area.style-one) .header-logo .active_logo img {
+  filter: brightness(1.8);
+}
+/* Sticky header is always dark purple — brighten logo */
 .sticky .header-logo img {
-  filter: brightness(10) !important;
+  filter: brightness(1.8) !important;
 }
 
 /* ===== Inner page hero / breadcrumb ===== */
@@ -2005,7 +2009,7 @@ select.gds-input { appearance: none; cursor: pointer; }
   display: block !important;
 }
 
-/* Mobile logo — white crest on dark background */
+/* Mobile logo — logo3.png transparent bg, brighten on dark bar */
 .mobile-logo {
   top: 50% !important;
   transform: translateY(-50%) !important;
@@ -2014,7 +2018,7 @@ select.gds-input { appearance: none; cursor: pointer; }
 .mobile-logo img {
   height: 56px !important;
   width: auto !important;
-  filter: brightness(10) !important;
+  filter: brightness(1.8) !important;
   border-radius: 0 !important;
   display: block !important;
 }
