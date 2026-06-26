@@ -1335,10 +1335,10 @@ body {
 }
 
 .gds-loader-logo img {
-  width: 140px;
-  height: auto;
+  width: 140px !important;
+  height: auto !important;
   border-radius: 0 !important;
-  filter: brightness(10);
+  filter: brightness(10) !important;
 }
 
 @keyframes loader-pulse {
