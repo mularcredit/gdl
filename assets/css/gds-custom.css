@@ -1963,3 +1963,145 @@ select.gds-input { appearance: none; cursor: pointer; }
   .whatsapp-float { bottom: 20px; right: 16px; width: 50px; height: 50px; }
   .whatsapp-float svg { width: 26px; height: 26px; }
 }
+
+/* ============================================================
+   MOBILE NAVIGATION — complete restyle
+   ============================================================ */
+
+/* Hide top info bar on mobile — wastes vertical space */
+@media (max-width: 991px) {
+  .header-top-area { display: none !important; }
+}
+
+/* ── Mobile menu bar (the strip containing logo + hamburger) ── */
+.mobile-menu-area {
+  background: #1a0535 !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
+}
+
+/* Mobile menu inner padding */
+.mobile-menu.mean-container {
+  padding: 0 !important;
+}
+
+/* Mean bar (the whole top strip) */
+.mean-container .mean-bar {
+  background: #1a0535 !important;
+  min-height: 64px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger icon — white bars visible on dark background */
+.mean-container a.meanmenu-reveal {
+  color: #ffffff !important;
+  top: 0 !important;
+  padding: 20px 18px !important;
+  height: 64px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #ffffff !important;
+  height: 2px !important;
+  width: 22px !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Mobile logo — white on dark background */
+.mobile-logo {
+  top: 12px !important;
+  left: 14px !important;
+}
+.mobile-logo img {
+  height: 44px !important;
+  width: auto !important;
+  filter: brightness(10) !important;
+  border-radius: 0 !important;
+}
+
+/* ── Mean nav dropdown (the full-width menu that drops down) ── */
+.mean-container .mean-nav {
+  background: #f4ecfb !important;
+  margin-top: 0 !important;
+}
+
+.mean-container .mean-nav ul li {
+  background: #f4ecfb !important;
+  border-top: 1px solid rgba(106,13,173,0.1) !important;
+  float: left;
+  width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+  background: #f4ecfb !important;
+  color: #1a0b2e !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 13px 5% !important;
+  border: none !important;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  background: #e8d5f7 !important;
+  color: #6A0DAD !important;
+}
+
+/* Sub-menu items */
+.mean-container .mean-nav ul li li a {
+  background: #ede0f8 !important;
+  color: #3d006e !important;
+  font-size: 13px !important;
+  padding: 11px 10% !important;
+  border-top: 1px solid rgba(106,13,173,0.08) !important;
+  opacity: 1 !important;
+}
+
+/* Expand/collapse +/− button */
+.mean-container .mean-nav ul li a.mean-expand {
+  background: transparent !important;
+  color: #6A0DAD !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  padding: 10px 14px !important;
+  height: auto !important;
+  top: 4px !important;
+  border: none !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  background: rgba(106,13,173,0.08) !important;
+}
+
+/* Hide dropdown chevron icons inside mean-nav (meanmenu handles expand) */
+.mean-container .mean-nav ul li a i { display: none !important; }
+
+/* ── General mobile overflow fix ── */
+body { overflow-x: hidden; }
+section, .container, .row { max-width: 100%; }
+
+/* ── Hero section — prevent right-image overflow on mobile ── */
+@media (max-width: 991px) {
+  .hero-thumb-wrapper { overflow: hidden; border-radius: 12px; }
+  .hero-thumb-wrapper img { width: 100%; height: auto; object-fit: cover; }
+}
+
+/* ── Feature cards — no horizontal overflow ── */
+@media (max-width: 767px) {
+  .single-feature-box, .educate-hover-box { overflow: hidden; }
+
+  /* Course/blog/case cards — ensure they don't overflow */
+  .course-details-box, .single-blog-box, .case-study-single-box { overflow: hidden; }
+
+  /* Tier card list wrap */
+  .gds-tier-top { flex-wrap: wrap; }
+
+  /* Contact page: make form come below info on mobile */
+  .contact_area .col-lg-6:first-child { margin-bottom: 24px; }
+
+  /* Instructor stats — two per row on mobile */
+  .gds-instr-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+}
