@@ -489,13 +489,29 @@
 						</div>
 
 					</form>
+
+					<!-- Celebration screen (hidden until submit) -->
+					<div class="gds-celebration" id="gds-celebration">
+						<div id="gds-confetti-box"></div>
+						<div class="gds-check-wrap">
+							<svg class="gds-check-svg" viewBox="0 0 52 52">
+								<circle class="gds-check-circle" cx="26" cy="26" r="24" fill="none"/>
+								<path class="gds-check-tick" fill="none" d="M14 27 l8 8 l16 -16"/>
+							</svg>
+						</div>
+						<h3 class="gds-cel-title">Enrolment Submitted!</h3>
+						<p class="gds-cel-sub">Thank you! We'll reach out within 24 hours to confirm your spot.</p>
+					</div>
+
 				</div>
 			</div>
 
 			<script>
+			var GDS_SHEET_URL = 'https://script.google.com/macros/s/PASTE_YOUR_DEPLOYED_URL_HERE/exec';
+
 			function gdsNext(step) {
-				const s = document.getElementById('step-' + step);
-				let ok = true;
+				var s = document.getElementById('step-' + step);
+				var ok = true;
 
 				if (step === 1) {
 					s.querySelectorAll('input[required]').forEach(function(el) {
@@ -528,36 +544,81 @@
 			}
 
 			function updateIndicator(active) {
-				for (let i = 1; i <= 4; i++) {
-					const el = document.getElementById('ind-' + i);
+				for (var i = 1; i <= 4; i++) {
+					var el = document.getElementById('ind-' + i);
 					el.classList.toggle('active', i === active);
 					el.classList.toggle('done', i < active);
 				}
 			}
 
 			function buildSummary() {
-				const f = document.getElementById('gds-enroll-form');
-				const d = new FormData(f);
-				document.getElementById('gds-summary').innerHTML = [
+				var f = document.getElementById('gds-enroll-form');
+				var d = new FormData(f);
+				var rows = [
 					['Name', d.get('full_name')],
 					['Phone', d.get('phone')],
 					['Email', d.get('email')],
 					['Platform', d.get('platform')],
 					['Level', d.get('level')],
 					['Schedule', d.get('schedule')],
-					['Occupation', d.get('occupation')],
-				].filter(r => r[1]).map(r =>
-					'<div class="gds-sum-row"><span>' + r[0] + '</span><strong>' + r[1] + '</strong></div>'
-				).join('');
+					['Occupation', d.get('occupation')]
+				];
+				document.getElementById('gds-summary').innerHTML = rows
+					.filter(function(r) { return r[1]; })
+					.map(function(r) {
+						return '<div class="gds-sum-row"><span>' + r[0] + '</span><strong>' + r[1] + '</strong></div>';
+					}).join('');
 			}
 
-			document.querySelectorAll('.gds-option-card input').forEach(radio => {
-				radio.addEventListener('change', () => {
-					document.querySelectorAll('.gds-option-card input[name="' + radio.name + '"]').forEach(r => {
+			document.querySelectorAll('.gds-option-card input').forEach(function(radio) {
+				radio.addEventListener('change', function() {
+					document.querySelectorAll('.gds-option-card input[name="' + radio.name + '"]').forEach(function(r) {
 						r.closest('.gds-option-card').classList.toggle('selected', r.checked);
 					});
 				});
 			});
+
+			/* ---- Form submit → Google Sheets ---- */
+			document.getElementById('gds-enroll-form').addEventListener('submit', function(e) {
+				e.preventDefault();
+				var btn = this.querySelector('.gds-btn-submit');
+				btn.disabled = true;
+				btn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending…';
+				var params = new URLSearchParams(new FormData(this));
+				fetch(GDS_SHEET_URL, { method: 'POST', mode: 'no-cors', body: params })
+					.then(function() { showCelebration(); })
+					.catch(function() { showCelebration(); });
+			});
+
+			function showCelebration() {
+				document.getElementById('gds-enroll-form').style.display = 'none';
+				document.querySelector('.gds-steps-header').style.display = 'none';
+				var cel = document.getElementById('gds-celebration');
+				cel.classList.add('visible');
+				launchConfetti();
+			}
+
+			function launchConfetti() {
+				var box = document.getElementById('gds-confetti-box');
+				var colors = ['#ff0080','#ff8c00','#ffe000','#00d084','#00bfff','#a855f7','#6A0DAD','#ff6b6b'];
+				var shapes = ['50%', '2px', '0'];
+				for (var i = 0; i < 70; i++) {
+					(function(i) {
+						var el = document.createElement('div');
+						var size = 6 + Math.random() * 8;
+						el.className = 'gds-cp';
+						el.style.cssText =
+							'left:' + (Math.random() * 100) + '%;' +
+							'background:' + colors[Math.floor(Math.random() * colors.length)] + ';' +
+							'width:' + size + 'px;height:' + size + 'px;' +
+							'border-radius:' + shapes[Math.floor(Math.random() * shapes.length)] + ';' +
+							'animation-duration:' + (1.2 + Math.random() * 1.8) + 's;' +
+							'animation-delay:' + (Math.random() * 0.8) + 's;' +
+							'transform:rotate(' + (Math.random() * 360) + 'deg);';
+						box.appendChild(el);
+					})(i);
+				}
+			}
 			</script>
 		</div>
 		<div class="contact_shape2 dance2">
