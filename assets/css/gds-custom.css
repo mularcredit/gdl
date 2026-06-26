@@ -1401,3 +1401,249 @@ body {
 .brand-arrow-shape,
 .brand-star-shape,
 .brand-line-shape { display: none !important; }
+
+/* ============================================================
+   Multi-step Enrollment Form — contact.html
+   ============================================================ */
+
+.gds-enroll-wrap {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 30px rgba(106,13,173,0.08);
+}
+
+/* Step indicator */
+.gds-steps-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.gds-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.gds-step-item span {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.gds-step-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e8d5f7;
+  color: #9b59b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.gds-step-item.active .gds-step-circle {
+  background: #6A0DAD;
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(106,13,173,0.15);
+}
+
+.gds-step-item.done .gds-step-circle {
+  background: #6A0DAD;
+  color: #fff;
+}
+
+.gds-step-item.done .gds-step-circle::after {
+  content: '\2713';
+}
+
+.gds-step-item.done .gds-step-circle { font-size: 0; }
+.gds-step-item.done .gds-step-circle::after { font-size: 14px; }
+
+.gds-step-item.active span,
+.gds-step-item.done span { color: #6A0DAD; }
+
+.gds-step-line {
+  flex: 1;
+  height: 2px;
+  background: #e8d5f7;
+  margin: 0 6px;
+  margin-bottom: 22px;
+  transition: background 0.3s;
+}
+
+/* Form steps */
+.gds-form-step { display: none; }
+.gds-form-step.active { display: block; }
+
+.gds-step-title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #1a0b2e !important;
+  margin-bottom: 20px !important;
+}
+
+/* Inputs */
+.gds-input {
+  width: 100%;
+  border: 1.5px solid #e0d0f5;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 14px;
+  color: #1a0b2e;
+  background: #faf7ff;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 0;
+}
+
+.gds-input:focus { border-color: #6A0DAD; background: #fff; }
+
+textarea.gds-input { resize: vertical; min-height: 80px; }
+
+select.gds-input { appearance: none; cursor: pointer; }
+
+/* Option cards (platform / level) */
+.gds-field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #7c4da0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 14px 0 8px;
+}
+
+.gds-option-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.gds-option-card {
+  flex: 1;
+  min-width: 90px;
+  border: 1.5px solid #e0d0f5;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  background: #faf7ff;
+}
+
+.gds-option-card:hover { border-color: #9b59b6; }
+
+.gds-option-card.selected,
+.gds-option-card input:checked ~ span { color: #6A0DAD; }
+
+.gds-option-card.selected { border-color: #6A0DAD !important; background: #f0e4ff; }
+
+.gds-option-card input { display: none; }
+
+.gds-option-card span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.gds-option-card span i { font-size: 16px; }
+
+/* Navigation buttons */
+.gds-form-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.gds-btn-next, .gds-btn-submit {
+  background: #6A0DAD;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background 0.2s;
+}
+
+.gds-btn-next:hover, .gds-btn-submit:hover { background: #4a0980; }
+
+.gds-btn-back {
+  background: transparent;
+  color: #6A0DAD;
+  border: 1.5px solid #e0d0f5;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 0.2s;
+}
+
+.gds-btn-back:hover { border-color: #6A0DAD; }
+
+/* Summary (step 4) */
+.gds-summary {
+  background: #faf7ff;
+  border: 1.5px solid #e0d0f5;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+
+.gds-sum-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid #ede0f8;
+  font-size: 13px;
+}
+
+.gds-sum-row:last-child { border-bottom: none; }
+
+.gds-sum-row span { color: #888; }
+
+.gds-sum-row strong { color: #1a0b2e; font-weight: 600; }
+
+/* Agree checkbox */
+.gds-agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.gds-agree input { width: 16px; height: 16px; accent-color: #6A0DAD; cursor: pointer; }
+
+@media (max-width: 767px) {
+  .gds-enroll-wrap { padding: 24px 18px; }
+  .gds-option-group { flex-direction: column; }
+  .gds-option-card { min-width: auto; }
+}

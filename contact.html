@@ -355,52 +355,200 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<!-- contact form box -->
-				<div class="contact-form-box style_two">
-					<!-- section title -->
-					<div class="contact-section-title">
-						<h4>CONTACT US</h4>
-						<h1>Feel Free to Contact Us</h1>
+				<div class="gds-enroll-wrap">
+
+					<!-- Step indicator -->
+					<div class="gds-steps-header">
+						<div class="gds-step-item active" id="ind-1">
+							<div class="gds-step-circle">1</div>
+							<span>Personal</span>
+						</div>
+						<div class="gds-step-line"></div>
+						<div class="gds-step-item" id="ind-2">
+							<div class="gds-step-circle">2</div>
+							<span>Course</span>
+						</div>
+						<div class="gds-step-line"></div>
+						<div class="gds-step-item" id="ind-3">
+							<div class="gds-step-circle">3</div>
+							<span>Background</span>
+						</div>
+						<div class="gds-step-line"></div>
+						<div class="gds-step-item" id="ind-4">
+							<div class="gds-step-circle">4</div>
+							<span>Confirm</span>
+						</div>
 					</div>
-					<form action="https://formspree.io/f/myyleorq" method="POST">
-						<div class="row">
-							<div class="col-lg-6 col-md-6">
-								<div class="form-box">
-									<input type="text" name="name" placeholder="Your Name *">
+
+					<form action="https://formspree.io/f/myyleorq" method="POST" id="gds-enroll-form">
+
+						<!-- Step 1: Personal Info -->
+						<div class="gds-form-step active" id="step-1">
+							<h4 class="gds-step-title">Personal Information</h4>
+							<div class="row g-3">
+								<div class="col-6">
+									<input class="gds-input" type="text" name="full_name" placeholder="Full Name *" required>
+								</div>
+								<div class="col-6">
+									<input class="gds-input" type="tel" name="phone" placeholder="Phone Number *" required>
+								</div>
+								<div class="col-6">
+									<input class="gds-input" type="email" name="email" placeholder="Email Address *" required>
+								</div>
+								<div class="col-6">
+									<input class="gds-input" type="text" name="city" placeholder="City / Town">
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="form-box">
-									<input type="text" name="name" placeholder="Phone No">
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="form-box">
-									<input type="email" name="name" placeholder="Enter E-Mail *">
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="form-box">
-									<input type="text" name="name" placeholder="Select Subjects *">
-								</div>
-							</div>
-							<div class="col-lg-12 col-md-12">
-								<div class="form-box message">
-									<textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message :"></textarea>
-								</div>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" id="vehicle1" name="vehicle1" value="agree">
-								<label for="vehicle1">Agree with Terms and Conditions</label>
-							</div>
-							<div class="contact-form">
-								<button type="submit">Send Message</button>
+							<div class="gds-form-nav">
+								<button type="button" class="gds-btn-next" onclick="gdsNext(1)">Next <i class="bi bi-arrow-right"></i></button>
 							</div>
 						</div>
+
+						<!-- Step 2: Course -->
+						<div class="gds-form-step" id="step-2">
+							<h4 class="gds-step-title">Course Selection</h4>
+
+							<p class="gds-field-label">GDS Platform</p>
+							<div class="gds-option-group">
+								<label class="gds-option-card"><input type="radio" name="platform" value="Amadeus GDS"><span><i class="bi bi-laptop"></i> Amadeus</span></label>
+								<label class="gds-option-card"><input type="radio" name="platform" value="Travelport GDS"><span><i class="bi bi-globe"></i> Travelport</span></label>
+								<label class="gds-option-card"><input type="radio" name="platform" value="Both Platforms"><span><i class="bi bi-layers"></i> Both</span></label>
+							</div>
+
+							<p class="gds-field-label">Level</p>
+							<div class="gds-option-group">
+								<label class="gds-option-card"><input type="radio" name="level" value="Basics"><span>Basics</span></label>
+								<label class="gds-option-card"><input type="radio" name="level" value="Expert"><span>Expert</span></label>
+								<label class="gds-option-card"><input type="radio" name="level" value="Full Programme"><span>Full Programme</span></label>
+							</div>
+
+							<p class="gds-field-label">Preferred Schedule</p>
+							<select class="gds-input" name="schedule">
+								<option value="">Select a time slot</option>
+								<option>Weekday Morning (8am – 12pm)</option>
+								<option>Weekday Afternoon (1pm – 5pm)</option>
+								<option>Weekday Evening (6pm – 9pm)</option>
+								<option>Weekend Class (Saturday)</option>
+							</select>
+
+							<div class="gds-form-nav">
+								<button type="button" class="gds-btn-back" onclick="gdsPrev(2)"><i class="bi bi-arrow-left"></i> Back</button>
+								<button type="button" class="gds-btn-next" onclick="gdsNext(2)">Next <i class="bi bi-arrow-right"></i></button>
+							</div>
+						</div>
+
+						<!-- Step 3: Background -->
+						<div class="gds-form-step" id="step-3">
+							<h4 class="gds-step-title">Your Background</h4>
+							<div class="row g-3">
+								<div class="col-12">
+									<input class="gds-input" type="text" name="occupation" placeholder="Current Occupation">
+								</div>
+								<div class="col-12">
+									<select class="gds-input" name="experience">
+										<option value="">GDS Experience Level</option>
+										<option>No experience — complete beginner</option>
+										<option>Some exposure — used GDS briefly</option>
+										<option>Experienced — looking to advance</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<select class="gds-input" name="referral">
+										<option value="">How did you hear about us?</option>
+										<option>Google Search</option>
+										<option>Social Media</option>
+										<option>Referral from Friend / Colleague</option>
+										<option>Travel Agency / Employer</option>
+										<option>Other</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<textarea class="gds-input" name="message" rows="3" placeholder="Any questions or comments?"></textarea>
+								</div>
+							</div>
+							<div class="gds-form-nav">
+								<button type="button" class="gds-btn-back" onclick="gdsPrev(3)"><i class="bi bi-arrow-left"></i> Back</button>
+								<button type="button" class="gds-btn-next" onclick="gdsNext(3)">Review <i class="bi bi-arrow-right"></i></button>
+							</div>
+						</div>
+
+						<!-- Step 4: Confirm -->
+						<div class="gds-form-step" id="step-4">
+							<h4 class="gds-step-title">Confirm Your Enrolment</h4>
+							<div class="gds-summary" id="gds-summary"></div>
+							<label class="gds-agree">
+								<input type="checkbox" name="agree" value="yes" required>
+								I agree to the Terms &amp; Conditions
+							</label>
+							<div class="gds-form-nav">
+								<button type="button" class="gds-btn-back" onclick="gdsPrev(4)"><i class="bi bi-arrow-left"></i> Back</button>
+								<button type="submit" class="gds-btn-submit">Submit Enrolment <i class="bi bi-check2-circle"></i></button>
+							</div>
+						</div>
+
 					</form>
-					<div id="status"></div>
-				</div> 
+				</div>
 			</div>
+
+			<script>
+			function gdsNext(step) {
+				const s = document.getElementById('step-' + step);
+				const required = s.querySelectorAll('[required]');
+				let ok = true;
+				required.forEach(el => {
+					el.style.borderColor = '';
+					if (el.type === 'radio') return;
+					if (!el.value.trim()) { el.style.borderColor = '#e74c3c'; ok = false; }
+				});
+				if (step === 2) {
+					if (!s.querySelector('input[name="platform"]:checked')) { alert('Please select a GDS platform.'); ok = false; }
+					if (!s.querySelector('input[name="level"]:checked')) { alert('Please select a level.'); ok = false; }
+				}
+				if (!ok) return;
+				if (step === 3) buildSummary();
+				document.getElementById('step-' + step).classList.remove('active');
+				document.getElementById('step-' + (step + 1)).classList.add('active');
+				updateIndicator(step + 1);
+			}
+
+			function gdsPrev(step) {
+				document.getElementById('step-' + step).classList.remove('active');
+				document.getElementById('step-' + (step - 1)).classList.add('active');
+				updateIndicator(step - 1);
+			}
+
+			function updateIndicator(active) {
+				for (let i = 1; i <= 4; i++) {
+					const el = document.getElementById('ind-' + i);
+					el.classList.toggle('active', i === active);
+					el.classList.toggle('done', i < active);
+				}
+			}
+
+			function buildSummary() {
+				const f = document.getElementById('gds-enroll-form');
+				const d = new FormData(f);
+				document.getElementById('gds-summary').innerHTML = [
+					['Name', d.get('full_name')],
+					['Phone', d.get('phone')],
+					['Email', d.get('email')],
+					['Platform', d.get('platform')],
+					['Level', d.get('level')],
+					['Schedule', d.get('schedule')],
+					['Occupation', d.get('occupation')],
+				].filter(r => r[1]).map(r =>
+					\`<div class="gds-sum-row"><span>\${r[0]}</span><strong>\${r[1]}</strong></div>\`
+				).join('');
+			}
+
+			document.querySelectorAll('.gds-option-card input').forEach(radio => {
+				radio.addEventListener('change', () => {
+					document.querySelectorAll(\`.gds-option-card input[name="\${radio.name}"]\`).forEach(r => {
+						r.closest('.gds-option-card').classList.toggle('selected', r.checked);
+					});
+				});
+			});
+			</script>
 		</div>
 		<div class="contact_shape2 dance2">
 			<img src="assets/images/inner-img/contact-shape.png" alt="shape">
