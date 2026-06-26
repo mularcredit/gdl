@@ -1218,6 +1218,13 @@ section.gds-faq-area,
   background-color: #f4ecfb !important;
 }
 
+/* CTA section background matches surrounding lavender — prevents visible
+   side bars where the rounded card doesn't reach the viewport edges */
+.call-to-action.style-one {
+  background-color: #f4ecfb !important;
+  padding-bottom: 60px !important;
+}
+
 section.feature-area.style-one::before,
 .case-study-area.style-one::before,
 section.gds-instructors-area::before,
