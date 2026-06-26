@@ -1741,3 +1741,7 @@ select.gds-input { appearance: none; cursor: pointer; }
   position: relative;
   z-index: 1;
 }
+
+/* contact_shape2 sits on top of form buttons on steps 2-4 — disable clicks */
+.inner_section .contact_shape2 { pointer-events: none !important; z-index: 0 !important; }
+.gds-enroll-wrap { position: relative; z-index: 10; }
