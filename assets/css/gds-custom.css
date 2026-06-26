@@ -1079,6 +1079,16 @@ section.about-area.style-three.inner {
   .gds-faq-footer { flex-wrap: wrap; gap: 16px; }
 }
 
+/* ===== Desktop header logo — prevent stretching ===== */
+.header-logo img,
+.header-logo a img {
+  height: 72px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
 /* ===== Logo visibility on light backgrounds ===== */
 /* Inner pages have a white header — make logo visible as dark mark */
 body:not(:has(section.hero_area.style-one)) .header-logo .active_logo img {
