@@ -1079,14 +1079,36 @@ section.about-area.style-three.inner {
   .gds-faq-footer { flex-wrap: wrap; gap: 16px; }
 }
 
-/* ===== Desktop header logo — prevent stretching ===== */
+/* ===== All logo.png instances — universal size lock ===== */
+/* Covers header, footer, sidebar, CTA, mobile, preloader */
 .header-logo img,
-.header-logo a img {
+.header-logo a img,
+.footer-logo img,
+.footer-logo a img,
+.nav-logo img,
+.nav-logo a img,
+.sidebar-logo img,
+.sidebar-logo a img,
+.call-to-logo img,
+.call-logo-box img,
+.mobile-logo img,
+img[src*="gds/logo.png"] {
   height: 72px !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
-  display: block !important;
+}
+
+/* CTA section logo is decorative — slightly smaller */
+.call-to-logo img,
+.call-logo-box .call-to-logo img {
+  height: 80px !important;
+}
+
+/* Footer logo */
+.footer-logo img,
+.footer-logo a img {
+  height: 75px !important;
 }
 
 /* ===== Logo visibility on light backgrounds ===== */
