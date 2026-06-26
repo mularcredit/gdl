@@ -537,13 +537,13 @@
 					['Schedule', d.get('schedule')],
 					['Occupation', d.get('occupation')],
 				].filter(r => r[1]).map(r =>
-					\`<div class="gds-sum-row"><span>\${r[0]}</span><strong>\${r[1]}</strong></div>\`
+					'<div class="gds-sum-row"><span>' + r[0] + '</span><strong>' + r[1] + '</strong></div>'
 				).join('');
 			}
 
 			document.querySelectorAll('.gds-option-card input').forEach(radio => {
 				radio.addEventListener('change', () => {
-					document.querySelectorAll(\`.gds-option-card input[name="\${radio.name}"]\`).forEach(r => {
+					document.querySelectorAll('.gds-option-card input[name="' + radio.name + '"]').forEach(r => {
 						r.closest('.gds-option-card').classList.toggle('selected', r.checked);
 					});
 				});
