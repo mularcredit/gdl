@@ -1745,3 +1745,221 @@ select.gds-input { appearance: none; cursor: pointer; }
 /* contact_shape2 sits on top of form buttons on steps 2-4 — disable clicks */
 .inner_section .contact_shape2 { pointer-events: none !important; z-index: 0 !important; }
 .gds-enroll-wrap { position: relative; z-index: 10; }
+
+/* ============================================================
+   RESPONSIVE — full mobile & tablet pass
+   ============================================================ */
+
+/* ── Tablet  (≤ 991px) ─────────────────────────────────────── */
+@media (max-width: 991px) {
+
+  /* Hero */
+  section.hero_area.style-one { padding: 16px 0 48px !important; }
+  section.hero_area.style-one .hero_content h1 {
+    font-size: 36px !important;
+    line-height: 46px !important;
+  }
+
+  /* Hero right image — give some breathing room when stacked */
+  .hero-thumb-wrapper { margin-top: 36px; }
+
+  /* Inner breadcrumb */
+  .breadcumb-area, .breadcumb-area.two { padding: 60px 0 30px !important; }
+
+  /* Section padding */
+  .why-choose-area.style-one { padding: 60px 0 60px !important; }
+  .gds-classes-area { padding: 20px 0 70px; }
+  .gds-instructors-area { padding: 70px 0 80px; }
+
+  /* Class card head */
+  .gds-class-head { font-size: 22px; padding: 18px 24px; }
+  .gds-tier { padding: 20px 24px 4px; }
+
+  /* Instructor */
+  .gds-instr-profile h2 { font-size: 32px !important; }
+  .gds-instr-profile > p { font-size: 14px; }
+
+  /* FAQ */
+  .gds-faq-area { padding: 50px 0 36px; }
+}
+
+/* ── Mobile  (≤ 767px) ─────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* ---- Hero ---- */
+  section.hero_area.style-one {
+    padding: 10px 0 40px !important;
+    text-align: center;
+  }
+  section.hero_area.style-one .hero_content { text-align: center; }
+  section.hero_area.style-one .hero_content h1 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+  }
+  section.hero_area.style-one .hero_content p { font-size: 14px !important; }
+
+  /* Centre badge */
+  .gds-hero-badge {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+  }
+
+  /* Centre CTA buttons */
+  .hero-button, .hero-btn, .hero-course-btn {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero thumb stack */
+  .hero-thumb-wrapper { margin-top: 28px; }
+
+  /* ---- Section titles ---- */
+  .section_title h1,
+  .section_title h2,
+  .section_title h3 {
+    font-size: 24px !important;
+    line-height: 1.35 !important;
+  }
+
+  /* ---- Inner breadcrumb ---- */
+  .breadcumb-area, .breadcumb-area.two {
+    padding: 50px 0 25px !important;
+    text-align: center;
+  }
+  .breadcumb-content h1,
+  .breadcumb-title h4 {
+    font-size: 24px !important;
+  }
+  .breadcumb-content ul { justify-content: center; }
+
+  /* ---- Why Choose Us ---- */
+  .why-choose-area.style-one { padding: 50px 0 50px !important; }
+  .choose-thumb { margin-bottom: 30px; }
+  .choose-thumb img { max-height: 260px; }
+
+  /* ---- Classes / Tier cards ---- */
+  .gds-classes-area { padding: 10px 0 60px; }
+  .gds-class-head {
+    font-size: 18px;
+    padding: 16px 20px;
+    gap: 10px;
+  }
+  .gds-class-head i { font-size: 18px; }
+  .gds-tier { padding: 16px 20px 4px; }
+  .gds-tier-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .gds-tier ul { grid-template-columns: 1fr; gap: 6px; }
+  .gds-tier ul li { font-size: 14px; }
+  .gds-enroll-row { margin-top: 28px; }
+
+  /* ---- Instructor section ---- */
+  .gds-instructors-area { padding: 50px 0 60px; }
+  .gds-instr-profile {
+    padding-left: 0;
+    padding-top: 28px;
+    text-align: center;
+  }
+  .gds-instr-profile h2 { font-size: 26px !important; }
+  .gds-instr-divider { margin: 0 auto 20px; }
+  .gds-instr-profile > p { font-size: 14px; max-width: 100%; }
+  .gds-instr-stats {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .gds-instr-cta { margin: 0 auto; }
+
+  /* ---- Mission / Vision ---- */
+  .gds-mv-area { padding: 10px 0 40px; }
+
+  /* ---- FAQ ---- */
+  .gds-faq-area { padding: 50px 0 36px; }
+  .gds-faq-q { font-size: 14px; padding: 14px 34px 14px 0; }
+  .gds-faq-footer { flex-wrap: wrap; gap: 14px; }
+  .gds-faq-footer p { font-size: 13px; }
+
+  /* ---- Feature cards (landing) ---- */
+  .feature-area.style-one { padding: 50px 0 !important; }
+  .style-one .single-feature-box { margin-bottom: 20px; }
+
+  /* ---- About page feature cards ---- */
+  .style-two .single-feature-box { margin-bottom: 16px; }
+
+  /* ---- CTA / call-to-action ---- */
+  .call-to-action.style-one { text-align: center; }
+  .call-to-action.style-one .call-to-btn { justify-content: center; display: flex; }
+
+  /* ---- Testimonials ---- */
+  .testimonial-area.style-one { padding: 50px 0 !important; }
+
+  /* ---- Blog ---- */
+  .blog-area.style-one { padding: 50px 0 !important; }
+
+  /* ---- Counter section ---- */
+  .counter-area { padding: 40px 0 !important; }
+  .single-counter-box { margin-bottom: 24px; }
+
+  /* ---- Footer ---- */
+  .footer-widget { margin-bottom: 32px; }
+  .footer-contact-phone p,
+  .footer-contact-address span { flex-wrap: wrap; }
+
+  /* ---- Enrollment form step header ---- */
+  .gds-step-item span { font-size: 9px; }
+  .gds-step-circle { width: 30px; height: 30px; font-size: 12px; }
+  .gds-step-line { margin: 0 4px; margin-bottom: 22px; }
+}
+
+/* ── Small mobile (≤ 575px) ───────────────────────────────── */
+@media (max-width: 575px) {
+
+  /* Hero */
+  section.hero_area.style-one .hero_content h1 {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+
+  /* Gds badge — wrap text on very narrow screens */
+  .gds-hero-badge { white-space: normal; text-align: center; }
+
+  /* Section titles */
+  .section_title h1,
+  .section_title h2,
+  .section_title h3 { font-size: 20px !important; }
+
+  /* Breadcrumb */
+  .breadcumb-content h1,
+  .breadcumb-title h4 { font-size: 20px !important; }
+
+  /* Class cards — reduce padding further */
+  .gds-class-head { font-size: 16px; padding: 14px 16px; }
+  .gds-tier { padding: 14px 16px 4px; }
+
+  /* Instructor */
+  .gds-instr-profile h2 { font-size: 22px !important; }
+  .gds-instr-stats li strong { font-size: 14px; }
+  .gds-instr-cta { font-size: 12px; padding: 12px 24px; }
+
+  /* Enrollment form — tighten further */
+  .gds-enroll-wrap { padding: 18px 14px; }
+  .gds-steps-header { gap: 2px; }
+  .gds-step-item span { display: none; }
+  .gds-step-circle { width: 26px; height: 26px; font-size: 11px; }
+  .gds-step-line { flex: 0.6; }
+  .gds-btn-next, .gds-btn-back, .gds-btn-submit {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  /* Contact page — stack form below info */
+  .contact_area .col-lg-6 { margin-bottom: 30px; }
+
+  /* WhatsApp button — move slightly left so it doesn't overlap scroll-up */
+  .whatsapp-float { bottom: 20px; right: 16px; width: 50px; height: 50px; }
+  .whatsapp-float svg { width: 26px; height: 26px; }
+}
