@@ -2138,3 +2138,40 @@ html, body { overflow-x: hidden; max-width: 100%; }
   /* Instructor stats — two per row on mobile */
   .gds-instr-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 }
+
+/* ===== What is a GDS explainer ===== */
+.gds-explain-area { padding: 30px 0 70px; }
+.gds-explain-text p { color: #5a5a6e; line-height: 1.8; margin-bottom: 16px; font-size: 16px; }
+.gds-explain-text strong { color: #1a0b2e; font-weight: 600; }
+.gds-explain-points { display: flex; flex-direction: column; gap: 12px; margin-top: 22px; }
+.gds-explain-points span { display: flex; align-items: center; gap: 10px; font-weight: 500; color: #1a0b2e; }
+.gds-explain-points i { color: #7c3abf; font-size: 20px; }
+
+/* ===== Partners: Travelport wordmark beside Amadeus logo ===== */
+.gds-partners .gds-partner-logo { max-height: 46px; width: auto; }
+.gds-travelport {
+  font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 34px;
+  letter-spacing: -1px; color: #0a1f44; text-transform: lowercase; line-height: 1;
+}
+.gds-travelport::after { content: '.'; color: #ff7a59; }
+@media (max-width: 575px){ .gds-travelport { font-size: 28px; } }
+
+/* Hide the stray divider line under the eyebrow in the GDS explainer */
+.gds-explain-area .section-sub-title h6::after { display: none !important; }
+
+/* GDS classes pricing note */
+.gds-classes-note { text-align: center; margin: 26px auto 4px; max-width: 760px; color: #5a5a6e; font-size: 15px; }
+.gds-classes-note i { color: #7c3abf; margin-right: 6px; }
+.gds-classes-note strong { color: #1a0b2e; font-weight: 600; }
+.gds-classes-note span { color: #b5471f; font-weight: 500; }
+
+/* ===== Amadeus / Travelport platform explainer cards ===== */
+.gds-platforms-row { margin-top: 30px; }
+.gds-platform-card {
+  background: #fff; border: 1px solid #f0eaf6; border-radius: 16px;
+  padding: 26px 28px; height: 100%; margin-bottom: 20px;
+  box-shadow: 0 14px 40px rgba(94,45,142,.07);
+}
+.gds-platform-name { font-size: 22px; font-weight: 600; color: #1a0b2e; margin-bottom: 10px; }
+.gds-platform-name span { display: inline-block; font-size: 12px; font-weight: 500; color: #7c3abf; background: #f4ecfb; padding: 3px 10px; border-radius: 30px; margin-left: 6px; vertical-align: middle; }
+.gds-platform-card p { color: #5a5a6e; line-height: 1.7; margin: 0; font-size: 15px; }
